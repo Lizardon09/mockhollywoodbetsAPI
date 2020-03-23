@@ -26,6 +26,16 @@ namespace mockhollywoodbets
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                        );
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,12 +52,7 @@ namespace mockhollywoodbets
 
             app.UseAuthorization();
 
-            app.UseCors(builder =>
-            {
-                builder.WithOrigins("https://localhost:44376",
-                   "http://localhost:4200"
-                    );
-            });
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {

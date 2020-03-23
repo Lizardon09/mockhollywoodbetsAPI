@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using mockhollywoodbets.Models;
-using System.Web.Http.Cors;
+using Microsoft.AspNetCore.Cors;
 
 namespace mockhollywoodbets.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [EnableCors("CorsPolicy")]
     public class SportController : ControllerBase
     {
 

@@ -9,6 +9,7 @@ namespace mockhollywoodbets.Models
     {
         public List<Country> Countries { get; set; }
         public List<SportTree> Sports { get; set; }
+        public List<Tournament> Tournaments { get; set; }
         public List<KeyValuePair<long, long>> SportCountryAssoc { get; set; }
 
         public DAL()
@@ -40,6 +41,8 @@ namespace mockhollywoodbets.Models
                 new KeyValuePair<long, long>(4, 2),
                 new KeyValuePair<long, long>(4, 3),
 
+                new KeyValuePair<long, long>(5, 1),
+                new KeyValuePair<long, long>(5, 2),
                 new KeyValuePair<long, long>(5, 3),
                 new KeyValuePair<long, long>(5, 10),
                 new KeyValuePair<long, long>(5, 7),
@@ -72,6 +75,13 @@ namespace mockhollywoodbets.Models
                 new SportTree(19, "Motorsport", "https://new.hollywoodbets.net/assets/images/icons/motorsport.svg"),
                 new SportTree(20, "Table Tennis", "https://new.hollywoodbets.net/assets/images/icons/sport-exotics.svg"),
                 new SportTree(21, "Vollyball", "https://new.hollywoodbets.net/assets/images/icons/volleyball.svg")
+            };
+
+            Tournaments = new List<Tournament>()
+            {
+                new Tournament(1, "Gambia Division 2", 1, 5),
+                new Tournament(2, "Mauritinia Division 2", 2, 5),
+                new Tournament(3, "Qatar Qatar Cup", 2, 5)
             };
 
         }
