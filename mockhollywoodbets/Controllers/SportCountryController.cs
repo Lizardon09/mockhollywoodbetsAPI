@@ -43,11 +43,11 @@ namespace mockhollywoodbets.Controllers
         {
             List<Country> countries = new List<Country>();
 
-            foreach (var valuepair in Datalayer.SportCountryAssoc)
+            foreach (var sportcountry in Datalayer.SportCountries)
             {
-                if (valuepair.Key == sportID)
+                if(sportcountry.SportID == sportID)
                 {
-                    countries.Add(Datalayer.GetCountryByID(valuepair.Value));
+                    countries.Add(Datalayer.GetCountryByID(sportcountry.CountryID));
                 }
             }
 

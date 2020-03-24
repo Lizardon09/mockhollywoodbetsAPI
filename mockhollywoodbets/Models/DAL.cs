@@ -10,7 +10,7 @@ namespace mockhollywoodbets.Models
         public List<Country> Countries { get; set; }
         public List<SportTree> Sports { get; set; }
         public List<Tournament> Tournaments { get; set; }
-        public List<KeyValuePair<long, long>> SportCountryAssoc { get; set; }
+        public List<SportCountry> SportCountries { get; set; }
 
         public DAL()
         {
@@ -35,21 +35,22 @@ namespace mockhollywoodbets.Models
 
             };
 
-            SportCountryAssoc = new List<KeyValuePair<long, long>>()
+            SportCountries = new List<SportCountry>()
             {
-                new KeyValuePair<long, long>(4, 1),
-                new KeyValuePair<long, long>(4, 2),
-                new KeyValuePair<long, long>(4, 3),
+                new SportCountry(4, 1),
+                new SportCountry(4, 2),
+                new SportCountry(4, 3),
 
-                new KeyValuePair<long, long>(5, 1),
-                new KeyValuePair<long, long>(5, 2),
-                new KeyValuePair<long, long>(5, 3),
-                new KeyValuePair<long, long>(5, 10),
-                new KeyValuePair<long, long>(5, 7),
+                new SportCountry(5, 1),
+                new SportCountry(5, 2),
+                new SportCountry(5, 3),
+                new SportCountry(5, 10),
+                new SportCountry(5, 7),
 
-                new KeyValuePair<long, long>(7, 5),
-                new KeyValuePair<long, long>(7, 9),
-                new KeyValuePair<long, long>(7, 12)
+                new SportCountry(7, 5),
+                new SportCountry(7, 9),
+                new SportCountry(7, 12)
+
             };
 
             Sports = new List<SportTree>()
