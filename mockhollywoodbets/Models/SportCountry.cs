@@ -8,14 +8,14 @@ namespace mockhollywoodbets.Models
     public class SportCountry
     {
         public long SportID { get; set; }
-        public long CountryID { get; set; }
+        public List<long> CountryID { get; set; }
 
         public SportCountry()
         {
 
         }
 
-        public SportCountry(long sportid, long countryid)
+        public SportCountry(long sportid, List<long> countryid)
         {
             this.SportID = sportid;
             this.CountryID = countryid;

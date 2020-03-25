@@ -37,19 +37,9 @@ namespace mockhollywoodbets.Models
 
             SportCountries = new List<SportCountry>()
             {
-                new SportCountry(4, 1),
-                new SportCountry(4, 2),
-                new SportCountry(4, 3),
-
-                new SportCountry(5, 1),
-                new SportCountry(5, 2),
-                new SportCountry(5, 3),
-                new SportCountry(5, 10),
-                new SportCountry(5, 7),
-
-                new SportCountry(7, 5),
-                new SportCountry(7, 9),
-                new SportCountry(7, 12)
+                new SportCountry(4, new List<long>(){ 1, 2, 3 }),
+                new SportCountry(5, new List<long>(){ 1, 2, 3, 10, 7 }),
+                new SportCountry(7, new List<long>(){ 5, 9, 12 })
 
             };
 
@@ -87,15 +77,16 @@ namespace mockhollywoodbets.Models
 
         }
 
-        public Country GetCountryByID(long id)
+        public List<Country> GetCountryByID(List<long> countryids)
         {
-            for (int i = 0; i < Countries.Count; i++)
+            List<Country> countries = new List<Country>();
+
+            for (int i = 0; i < countryids.Count; i++)
             {
-                if (Countries[i].Id == id)
-                    return Countries[i];
+                countries.Add(Countries.Find(country => country.Id == countryids[i]));
             }
 
-            return new Country();
+            return countries;
         }
 
     }

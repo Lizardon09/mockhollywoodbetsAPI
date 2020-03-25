@@ -41,17 +41,15 @@ namespace mockhollywoodbets.Controllers
 
         private List<Country> GetCountryBySport(long sportID)
         {
-            List<Country> countries = new List<Country>();
-
             foreach (var sportcountry in Datalayer.SportCountries)
             {
                 if(sportcountry.SportID == sportID)
                 {
-                    countries.Add(Datalayer.GetCountryByID(sportcountry.CountryID));
+                    return Datalayer.GetCountryByID(sportcountry.CountryID);
                 }
             }
 
-            return countries;
+            return new List<Country>();
         }
 
 
