@@ -32,17 +32,16 @@ namespace mockhollywoodbets.Controllers
         //}
 
         [HttpGet]
-        public IEnumerable<Tournament> Get(int? sportid, int? countryid)
+        public IEnumerable<Tournament> Get(long? sportid, long? countryid)
         {
 
             return GetTournamentBySportCountry(sportid, countryid).ToArray();
         }
 
-        private List<Tournament> GetTournamentBySportCountry(int? sportid, int? countryid)
+        private List<Tournament> GetTournamentBySportCountry(long? sportid, long? countryid)
         {
-            List<Tournament> tournaments = Datalayer.Tournaments.FindAll(x => x.Sportcode == sportid && x.Countrycode == countryid);
 
-            return tournaments;
+            return Datalayer.GetTournamentsByCountrySport(countryid, sportid);
         }
 
     }

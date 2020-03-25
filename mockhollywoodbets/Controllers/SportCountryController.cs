@@ -26,20 +26,26 @@ namespace mockhollywoodbets.Controllers
             Datalayer = new DAL();
         }
 
+        //[HttpGet]
+        //public IEnumerable<Country> Get()
+        //{
+        //    return Datalayer.Countries.ToArray();
+        //}
+
         [HttpGet]
-        public IEnumerable<Country> Get()
+        public IEnumerable<Country> Get(long? sportid)
         {
-            return Datalayer.Countries.ToArray();
+            if (sportid.HasValue)
+            {
+                return GetCountryBySport(sportid).ToArray();
+            }
+            else
+            {
+                return Datalayer.Countries.ToArray();
+            }
         }
 
-        [HttpGet("{id}")]
-        public IEnumerable<Country> Get(long id)
-        {
-            
-            return GetCountryBySport(id).ToArray();
-        }
-
-        private List<Country> GetCountryBySport(long sportID)
+        private List<Country> GetCountryBySport(long? sportID)
         {
             foreach (var sportcountry in Datalayer.SportCountries)
             {

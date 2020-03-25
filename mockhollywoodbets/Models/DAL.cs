@@ -10,6 +10,7 @@ namespace mockhollywoodbets.Models
         public List<Country> Countries { get; set; }
         public List<SportTree> Sports { get; set; }
         public List<Tournament> Tournaments { get; set; }
+        public List<TournamentSC> Tournamentassociations { get; set; }
         public List<SportCountry> SportCountries { get; set; }
 
         public DAL()
@@ -70,9 +71,15 @@ namespace mockhollywoodbets.Models
 
             Tournaments = new List<Tournament>()
             {
-                new Tournament(1, "Gambia Division 2", 1, 5),
-                new Tournament(2, "Mauritinia Division 2", 2, 5),
-                new Tournament(3, "Qatar Qatar Cup", 2, 5)
+                new Tournament(1, "Gambia Division 2"),
+                new Tournament(2, "Mauritinia Division 2"),
+                new Tournament(3, "Qatar Qatar Cup")
+            };
+
+            Tournamentassociations = new List<TournamentSC>()
+            {
+                new TournamentSC(1, 5, new List<long>(){ 1 }),
+                new TournamentSC(2, 5, new List<long>(){ 2, 3})
             };
 
         }
@@ -87,6 +94,23 @@ namespace mockhollywoodbets.Models
             }
 
             return countries;
+        }
+
+        public List<Tournament> GetTournamentsByCountrySport(long? countryid, long? sportid)
+        {
+            TournamentSC temp = this.Tournamentassociations.Find(association => association.Countrycode == countryid && association.Sportcode == sportid);
+            List<Tournament> tournaments = new List<Tournament>();
+
+            if (temp!=null)
+            {
+                for (int i = 0; i < temp.Tournamentcodes.Count; i++)
+                {
+                    tournaments.Add(this.Tournaments.Find(tournament => tournament.Id == temp.Tournamentcodes[i]));
+                }
+            }
+
+            return tournaments;
+
         }
 
     }

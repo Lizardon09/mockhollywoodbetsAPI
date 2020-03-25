@@ -9,15 +9,11 @@ namespace mockhollywoodbets.Models
     {
         public long Id { get; set; }
         public string Name { get; set; }
-        public long Countrycode { get; set; }
-        public long Sportcode { get; set; }
 
-        public Tournament(long id, string name, long countrycode, long sportcode)
+        public Tournament(long id, string name)
         {
             this.Id = id;
             this.Name = name;
-            this.Countrycode = countrycode;
-            this.Sportcode = sportcode;
         }
 
     }
