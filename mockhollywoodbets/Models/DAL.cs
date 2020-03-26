@@ -12,6 +12,7 @@ namespace mockhollywoodbets.Models
         public List<Tournament> Tournaments { get; set; }
         public List<TournamentSC> Tournamentassociations { get; set; }
         public List<SportCountry> SportCountries { get; set; }
+        public List<Event> Events { get; set; }
 
         public DAL()
         {
@@ -38,6 +39,8 @@ namespace mockhollywoodbets.Models
 
             SportCountries = new List<SportCountry>()
             {
+                new SportCountry(1, new List<long>(){ 4 }),
+                new SportCountry(2, new List<long>(){ 1, 2, 3, 4, 5, 11, 12, 13, 14, 15}),
                 new SportCountry(4, new List<long>(){ 1, 2, 3 }),
                 new SportCountry(5, new List<long>(){ 1, 2, 3, 10, 7 }),
                 new SportCountry(7, new List<long>(){ 5, 9, 12 })
@@ -80,6 +83,16 @@ namespace mockhollywoodbets.Models
             {
                 new TournamentSC(1, 5, new List<long>(){ 1 }),
                 new TournamentSC(2, 5, new List<long>(){ 2, 3})
+            };
+
+            Events = new List<Event>()
+            {
+                new Event(1, 1, "Burger vs cheesys", new DateTime(2020, 3, 26, 10, 30, 0)),
+                new Event(1, 2, "Nados vs McDonalds", new DateTime(2020, 3, 26, 17, 30, 0)),
+                new Event(1, 3, "Fries vs chicken", new DateTime(2020, 3, 26, 12, 0, 0)),
+                new Event(2, 4, "Sharks vs Whales", new DateTime(2020, 3, 26, 8, 15, 0)),
+                new Event(2, 5, "Dolphin vs Sharks", new DateTime(2020, 3, 26, 9, 45, 0)),
+                new Event(3, 6, "Dallas vs Texasmen", new DateTime(2020, 3, 26, 7, 20, 0))
             };
 
         }
