@@ -13,13 +13,13 @@ namespace MockHollywoodBets.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [EnableCors("CorsPolicy")]
-    public class EventController : ControllerBase
+    public class BettypeController : ControllerBase
     {
         private static DAL Datalayer { get; set; }
 
-        private readonly ILogger<EventController> _logger;
+        private readonly ILogger<BettypeController> _logger;
 
-        public EventController(ILogger<EventController> logger)
+        public BettypeController(ILogger<BettypeController> logger)
         {
             _logger = logger;
             Datalayer = new DAL();
@@ -32,16 +32,15 @@ namespace MockHollywoodBets.Controllers
         //}
 
         [HttpGet]
-        public IEnumerable<Event> Get(long? tournamentid)
+        public IEnumerable<Bettype> Get(long? tournamentid)
         {
 
-            return GetTournamentBySportCountry(tournamentid).ToArray();
+            return GetBettypeByTournament(tournamentid).ToArray();
         }
 
-        private List<Event> GetTournamentBySportCountry(long? tournamentid)
+        private List<Bettype> GetBettypeByTournament(long? tournamentid)
         {
-
-            return Datalayer.Events.FindAll(x => x.TournamentID == tournamentid);
+            return Datalayer.GetBettypeByTournament(tournamentid);
         }
     }
 }

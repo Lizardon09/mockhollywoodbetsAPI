@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using mockhollywoodbets.Models;
+using MockHollywoodBets.Models;
 using Microsoft.AspNetCore.Cors;
 
-namespace mockhollywoodbets.Controllers
+namespace MockHollywoodBets.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

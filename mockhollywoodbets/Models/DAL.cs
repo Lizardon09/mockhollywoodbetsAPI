@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace mockhollywoodbets.Models
+namespace MockHollywoodBets.Models
 {
     public class DAL
     {
@@ -12,6 +12,8 @@ namespace mockhollywoodbets.Models
         public List<Tournament> Tournaments { get; set; }
         public List<TournamentSC> Tournamentassociations { get; set; }
         public List<SportCountry> SportCountries { get; set; }
+        public List<Bettype> Bettypes { get; set; }
+        public List<TournamentBettype> TournamentBettypes {get; set;}
         public List<Event> Events { get; set; }
 
         public DAL()
@@ -95,7 +97,22 @@ namespace mockhollywoodbets.Models
                 new Event(3, 6, "Dallas vs Texasmen", new DateTime(2020, 3, 26, 7, 20, 0))
             };
 
-        }
+            Bettypes = new List<Bettype>()
+            {
+                new Bettype(1, "Full Time"),
+                new Bettype(2, "Double Chance"),
+                new Bettype(3, "Both Teams to Score"),
+                new Bettype(4, "Double Chance and Both Teams to Score")
+            };
+
+            TournamentBettypes = new List<TournamentBettype>()
+            {
+                new TournamentBettype(1, new List<long>(){ 1, 2 }),
+                new TournamentBettype(2, new List<long>(){ 1,3,4}),
+                new TournamentBettype(3, new List<long>(){ 2, 4})
+            };
+
+    }
 
         public List<Country> GetCountryByID(List<long> countryids)
         {
@@ -123,6 +140,23 @@ namespace mockhollywoodbets.Models
             }
 
             return tournaments;
+
+        }
+
+        public List<Bettype> GetBettypeByTournament(long? tournamentid)
+        {
+            TournamentBettype temp = this.TournamentBettypes.Find(association => association.TournamentID == tournamentid);
+            List<Bettype> bettypes = new List<Bettype>();
+
+            if (temp != null)
+            {
+                for(int i=0; i < temp.BettypeID.Count; i++)
+                {
+                    bettypes.Add(this.Bettypes.Find(bettype => bettype.BettypeID == temp.BettypeID[i]));
+                }
+            }
+
+            return bettypes;
 
         }
 
