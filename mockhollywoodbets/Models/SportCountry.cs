@@ -1,24 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockHollywoodBets.Models
 {
-    public class SportCountry
+    public partial class SportCountry
     {
-        public long SportID { get; set; }
-        public List<long> CountryID { get; set; }
+        public int SportCountryId { get; set; }
+        public int? SportId { get; set; }
+        public int? CountryId { get; set; }
 
-        public SportCountry()
-        {
-
-        }
-
-        public SportCountry(long sportid, List<long> countryid)
-        {
-            this.SportID = sportid;
-            this.CountryID = countryid;
-        }
+        public virtual Country Country { get; set; }
+        public virtual SportTree Sport { get; set; }
     }
 }

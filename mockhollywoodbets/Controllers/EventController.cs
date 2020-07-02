@@ -4,9 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
+using MockHollywoodBets.DataManagers;
+using MockHollywoodBets.DataManagers.Repository.Interfaces;
 
 namespace MockHollywoodBets.Controllers
 {
@@ -15,14 +18,32 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class EventController : ControllerBase
     {
-        private static DAL Datalayer { get; set; }
+        private static DALLogic Datalayer { get; set; }
+
+        private readonly IEventRepository _eventRepository;
 
         private readonly ILogger<EventController> _logger;
 
-        public EventController(ILogger<EventController> logger)
+        public EventController(ILogger<EventController> logger, IEventRepository eventRepository)
         {
             _logger = logger;
-            Datalayer = new DAL();
+            Datalayer = new DALLogic();
+            _eventRepository = eventRepository;
+        }
+
+        [HttpGet]
+        public IQueryable<Event> Get(long? tournamentid)
+        {
+            if (tournamentid.HasValue)
+            {
+                return _eventRepository.Get(tournamentid);
+            }
+
+            else
+            {
+                return _eventRepository.GetAll();
+            }
+
         }
 
         //[HttpGet]
@@ -31,17 +52,17 @@ namespace MockHollywoodBets.Controllers
         //    return Datalayer.Tournaments.ToArray();
         //}
 
-        [HttpGet]
-        public IEnumerable<Event> Get(long? tournamentid)
-        {
+        //[HttpGet]
+        //public IEnumerable<Event2> Get(long? tournamentid)
+        //{
 
-            return GetTournamentBySportCountry(tournamentid).ToArray();
-        }
+        //    return GetTournamentBySportCountry(tournamentid).ToArray();
+        //}
 
-        private List<Event> GetTournamentBySportCountry(long? tournamentid)
-        {
+        //private List<Event2> GetTournamentBySportCountry(long? tournamentid)
+        //{
 
-            return Datalayer.Events.FindAll(x => x.TournamentID == tournamentid);
-        }
+        //    return Datalayer.Events.FindAll(x => x.TournamentID == tournamentid);
+        //}
     }
 }

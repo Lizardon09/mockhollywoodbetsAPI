@@ -15,6 +15,8 @@ namespace MockHollywoodBets.Models
         public List<Bettype> Bettypes { get; set; }
         public List<TournamentBettype> TournamentBettypes {get; set;}
         public List<Event> Events { get; set; }
+        public List<Market> Markets { get; set; }
+        public List<BettypeMarket> BettypeMarkets { get; set; }
 
         public DAL()
         {
@@ -90,8 +92,8 @@ namespace MockHollywoodBets.Models
             Events = new List<Event>()
             {
                 new Event(1, 1, "Burger vs cheesys", new DateTime(2020, 3, 26, 10, 30, 0)),
-                new Event(1, 2, "Nados vs McDonalds", new DateTime(2020, 3, 26, 17, 30, 0)),
-                new Event(1, 3, "Fries vs chicken", new DateTime(2020, 3, 26, 12, 0, 0)),
+                new Event(1, 2, "Nados vs McDonalds", new DateTime(2020, 4, 26, 17, 30, 0)),
+                new Event(1, 3, "Fries vs chicken", new DateTime(2020, 4, 26, 12, 0, 0)),
                 new Event(2, 4, "Sharks vs Whales", new DateTime(2020, 3, 26, 8, 15, 0)),
                 new Event(2, 5, "Dolphin vs Sharks", new DateTime(2020, 3, 26, 9, 45, 0)),
                 new Event(3, 6, "Dallas vs Texasmen", new DateTime(2020, 3, 26, 7, 20, 0))
@@ -110,6 +112,21 @@ namespace MockHollywoodBets.Models
                 new TournamentBettype(1, new List<long>(){ 1, 2 }),
                 new TournamentBettype(2, new List<long>(){ 1,3,4}),
                 new TournamentBettype(3, new List<long>(){ 2, 4})
+            };
+
+            Markets = new List<Market>()
+            {
+                new Market(1, "Home"),
+                new Market(2, "Draw"),
+                new Market(3, "Away")
+            };
+
+            BettypeMarkets = new List<BettypeMarket>()
+            {
+                new BettypeMarket(1, new List<long>(){ 1, 2, 3 }),
+                new BettypeMarket(2, new List<long>(){ 1, 2, 3 }),
+                new BettypeMarket(3, new List<long>(){ 1, 2, 3 }),
+                new BettypeMarket(4, new List<long>(){ 1, 2, 3 }),
             };
 
     }
@@ -158,6 +175,30 @@ namespace MockHollywoodBets.Models
 
             return bettypes;
 
+        }
+
+        public List<Market> GetMarketsByBettype(long? bettypeid)
+        {
+            BettypeMarket temp = this.BettypeMarkets.Find(association => association.BettypeID == bettypeid);
+            List<Market> markets = new List<Market>();
+
+            if(temp != null)
+            {
+                for (int i = 0; i < temp.MarketID.Count; i++)
+                {
+                    markets.Add(this.Markets.Find(market => market.MarketID == temp.MarketID[i]));
+                }
+            }
+
+            return markets;
+
+        }
+
+        public List<Event> GetEventByTournament(long? tournamentid)
+        {
+            List<Event> events = this.Events.FindAll(x => x.TournamentID == tournamentid);
+            events = events.OrderBy(x => x.EventDate).ToList();
+            return events;
         }
 
     }

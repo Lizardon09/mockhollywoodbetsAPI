@@ -3,19 +3,19 @@ using System.Collections.Generic;
 
 namespace MockHollywoodBets.Models
 {
-    public partial class Event
+    public partial class MarketBettype
     {
-        public Event()
+        public MarketBettype()
         {
             Odds = new HashSet<Odds>();
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
-        public DateTime? Date { get; set; }
-        public int TournamentId { get; set; }
+        public int? MarketId { get; set; }
+        public int? BettypeId { get; set; }
 
-        public virtual Tournament Tournament { get; set; }
+        public virtual Bettype Bettype { get; set; }
+        public virtual Market Market { get; set; }
         public virtual ICollection<Odds> Odds { get; set; }
     }
 }

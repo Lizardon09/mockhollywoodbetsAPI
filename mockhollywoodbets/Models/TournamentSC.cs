@@ -1,21 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockHollywoodBets.Models
 {
-    public class TournamentSC
+    public partial class TournamentSc
     {
-        public long Countrycode { get; set; }
-        public long Sportcode { get; set; }
-        public List<long> Tournamentcodes { get; set; }
+        public int Id { get; set; }
+        public int? TournamentId { get; set; }
+        public int? CountryId { get; set; }
+        public int? SportId { get; set; }
 
-        public TournamentSC(long countryid, long sportid, List<long> tournamentids)
-        {
-            this.Countrycode = countryid;
-            this.Sportcode = sportid;
-            this.Tournamentcodes = tournamentids;
-        }
+        public virtual Country Country { get; set; }
+        public virtual SportTree Sport { get; set; }
+        public virtual Tournament Tournament { get; set; }
     }
 }

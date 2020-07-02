@@ -1,20 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockHollywoodBets.Models
 {
-    public class Tournament
+    public partial class Tournament
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
-
-        public Tournament(long id, string name)
+        public Tournament()
         {
-            this.Id = id;
-            this.Name = name;
+            Event = new HashSet<Event>();
+            TournamentBettype = new HashSet<TournamentBettype>();
+            TournamentSc = new HashSet<TournamentSc>();
         }
 
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public virtual ICollection<Event> Event { get; set; }
+        public virtual ICollection<TournamentBettype> TournamentBettype { get; set; }
+        public virtual ICollection<TournamentSc> TournamentSc { get; set; }
     }
 }

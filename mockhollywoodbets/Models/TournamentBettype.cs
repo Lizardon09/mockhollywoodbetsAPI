@@ -1,25 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockHollywoodBets.Models
 {
-    public class TournamentBettype
+    public partial class TournamentBettype
     {
-        public long TournamentID { get; set; }
-        public List<long> BettypeID { get; set; }
+        public int Id { get; set; }
+        public int? TournamentId { get; set; }
+        public int? BettypeId { get; set; }
 
-        public TournamentBettype()
-        {
-
-        }
-
-        public TournamentBettype(long tournamentid, List<long> bettypeids)
-        {
-            this.TournamentID = tournamentid;
-            this.BettypeID = bettypeids;
-        }
-
+        public virtual Bettype Bettype { get; set; }
+        public virtual Tournament Tournament { get; set; }
     }
 }

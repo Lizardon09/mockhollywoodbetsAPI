@@ -1,26 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MockHollywoodBets.Models
 {
-    public class Country
+    public partial class Country
     {
-        public long Id { get; set; }
-        public string Name { get; set; }
-        public string Code { get; set; }
-
         public Country()
         {
-
+            SportCountry = new HashSet<SportCountry>();
+            TournamentSc = new HashSet<TournamentSc>();
         }
 
-        public Country(long id, string name, string logo)
-        {
-            this.Id = id;
-            this.Name = name;
-            this.Code = logo;
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Logo { get; set; }
+
+        public virtual ICollection<SportCountry> SportCountry { get; set; }
+        public virtual ICollection<TournamentSc> TournamentSc { get; set; }
     }
 }

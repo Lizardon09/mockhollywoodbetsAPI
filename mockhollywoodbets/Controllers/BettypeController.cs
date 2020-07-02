@@ -4,9 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
+using MockHollywoodBets.DataManagers;
+using MockHollywoodBets.DataManagers.Repository.Interfaces;
 
 namespace MockHollywoodBets.Controllers
 {
@@ -15,14 +18,30 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class BettypeController : ControllerBase
     {
-        private static DAL Datalayer { get; set; }
+        private static DALLogic Datalayer { get; set; }
 
+        private readonly IBettypeRepository _bettypeRepository;
+        
         private readonly ILogger<BettypeController> _logger;
 
-        public BettypeController(ILogger<BettypeController> logger)
+        public BettypeController(ILogger<BettypeController> logger, IBettypeRepository bettypeRepository)
         {
             _logger = logger;
-            Datalayer = new DAL();
+            Datalayer = new DALLogic();
+            _bettypeRepository = bettypeRepository;
+        }
+
+        [HttpGet]
+        public IQueryable<Bettype> Get(long? tournamentid)
+        {
+            if (tournamentid.HasValue)
+            {
+                return _bettypeRepository.Get(tournamentid);
+            }
+            else
+            {
+                return _bettypeRepository.GetAll();
+            }
         }
 
         //[HttpGet]
@@ -31,16 +50,16 @@ namespace MockHollywoodBets.Controllers
         //    return Datalayer.Tournaments.ToArray();
         //}
 
-        [HttpGet]
-        public IEnumerable<Bettype> Get(long? tournamentid)
-        {
+        //[HttpGet]
+        //public IEnumerable<Bettype2> Get(long? tournamentid)
+        //{
 
-            return GetBettypeByTournament(tournamentid).ToArray();
-        }
+        //    return GetBettypeByTournament(tournamentid).ToArray();
+        //}
 
-        private List<Bettype> GetBettypeByTournament(long? tournamentid)
-        {
-            return Datalayer.GetBettypeByTournament(tournamentid);
-        }
+        //private List<Bettype2> GetBettypeByTournament(long? tournamentid)
+        //{
+        //    return Datalayer.GetBettypeByTournament(tournamentid);
+        //}
     }
 }
