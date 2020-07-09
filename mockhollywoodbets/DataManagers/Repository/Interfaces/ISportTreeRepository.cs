@@ -8,5 +8,6 @@ namespace MockHollywoodBets.DataManagers.Repository.Interfaces
 {
     public interface ISportTreeRepository : IDataRepository<SportTree>
     {
+        IQueryable<SportTree> Get(long? sportid);
     }
 }

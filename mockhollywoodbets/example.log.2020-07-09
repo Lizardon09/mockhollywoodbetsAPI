@@ -1,0 +1,73 @@
+2020-07-09 23:54:52,389  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:54:55,646  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:54:55,755  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:54:55,758  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:54:56,075  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:54:56,087  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:55:12,746  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:55:12,864  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:55:12,869  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:55:13,668  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:55:13,672  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:56:45,252  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:56:45,351  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:56:45,358  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:56:45,654  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:56:45,664  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:56:57,959  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:56:58,062  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:56:58,066  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:56:58,365  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:56:58,369  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:01,183  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:01,295  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:01,298  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:01,601  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:01,604  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:05,481  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:05,599  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:05,603  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:05,914  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:05,921  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:08,551  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:08,722  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:08,725  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:09,017  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:09,023  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:14,221  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:14,389  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:14,393  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:14,695  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:14,699  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:16,708  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:16,826  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:16,829  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:17,127  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:17,131  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:20,911  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:21,018  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:21,022  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:21,362  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:21,366  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:26,790  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:57:26,918  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:26,921  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:27,240  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:27,244  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:33,866  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:57:35,368  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:57:36,092  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-09 23:57:36,095  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-09 23:57:36,396  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-09 23:57:45,792  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:57:46,592  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:57:47,443  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:57:47,456  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:57:47,750  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:57:47,753  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:57:59,362  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:57:59,998  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:58:00,885  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-09 23:58:00,888  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-09 23:58:01,186  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 

@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.AspNetCore.Cors;
 using MockHollywoodBets.DataManagers;
@@ -19,7 +18,6 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class SportController : ControllerBase
     {
-        private static DALLogic Datalayer { get; set; }
 
         private readonly ISportTreeRepository _sportTreeRepository;
 
@@ -28,28 +26,44 @@ namespace MockHollywoodBets.Controllers
         public SportController(ILogger<SportController> logger, ISportTreeRepository sporttreerepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _sportTreeRepository = sporttreerepository;
         }
 
-        //[HttpGet]
-        //public IEnumerable<SportTree2> Get()
-        //{
-        //    return Datalayer.Sports.ToArray();
-        //}
-
-        // GET: api/Sport
         [HttpGet]
-        public IQueryable<SportTree> Get()
+        public IActionResult Get(long? sportid)
         {
-            return _sportTreeRepository.GetAll();
-        }
+            try
+            {
+                if (sportid.HasValue)
+                {
 
-        // GET: api/Sport/5
-        [HttpGet("{id}")]
-        public SportTree Get(long id)
-        {
-            return _sportTreeRepository.Get(id);
+                    _logger.LogInformation("API Request hit: GET all Sports by SportId: " + sportid.Value);
+                    var result = _sportTreeRepository.Get(sportid.Value);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all Sports by SportId: " + sportid.Value + " ) no entries found");
+                        return NotFound("Bettype was not found with SportId: " + sportid.Value);
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all Sports by no criteria");
+                    var result = _sportTreeRepository.GetAll();
+                    return Ok(result);
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (GET all Sports by SportId) FAILED: ", e);
+                return BadRequest();
+            }
+
         }
 
     }

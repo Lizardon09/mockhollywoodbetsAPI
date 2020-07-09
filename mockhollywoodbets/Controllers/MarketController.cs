@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
@@ -19,7 +18,6 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class MarketController : ControllerBase
     {
-        private static DALLogic Datalayer { get; set; }
 
         private readonly IMarketRepository _marketRepository;
 
@@ -28,21 +26,45 @@ namespace MockHollywoodBets.Controllers
         public MarketController(ILogger<MarketController> logger, IMarketRepository marketRepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _marketRepository = marketRepository;
         }
 
         [HttpGet]
-        public IQueryable<MarketOdd> Get(long? tournamentid)
+        public IActionResult Get(long? tournamentid)
         {
-            if (tournamentid.HasValue)
+
+            try
             {
-                return _marketRepository.Get(tournamentid);
+                if (tournamentid.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: GET all MarketOdds by TournamentId: " + tournamentid.Value);
+                    var result = _marketRepository.Get(tournamentid);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all MarketOdds by TournamentId: " + tournamentid.Value + " ) no entries found");
+                        return NotFound("MarketOdds were not found with TournamentId: " + tournamentid.Value);
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all MarketOdds by no criteria");
+                    var result = _marketRepository.GetAll();
+                    return Ok(result);
+                }
             }
-            else
+
+            catch (Exception e)
             {
-                return _marketRepository.GetAll();
+                _logger.LogError("API Request (GET all MarketOdds by TournamentId) FAILED: ", e);
+                return BadRequest();
             }
+
         }
     }
 }

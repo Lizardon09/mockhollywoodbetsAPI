@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
@@ -18,7 +17,6 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class BettypeController : ControllerBase
     {
-        private static DALLogic Datalayer { get; set; }
 
         private readonly IBettypeRepository _bettypeRepository;
         
@@ -27,39 +25,45 @@ namespace MockHollywoodBets.Controllers
         public BettypeController(ILogger<BettypeController> logger, IBettypeRepository bettypeRepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _bettypeRepository = bettypeRepository;
         }
 
         [HttpGet]
-        public IQueryable<Bettype> Get(long? tournamentid)
+        public IActionResult Get(long? tournamentid)
         {
-            if (tournamentid.HasValue)
+            try
             {
-                return _bettypeRepository.Get(tournamentid);
+                if (tournamentid.HasValue)
+                {
+
+                        _logger.LogInformation("API Request hit: GET all Bettypes by TournamentId: "+tournamentid.Value);
+                        var result = _bettypeRepository.Get(tournamentid);
+                        if (result.ToList().Any())
+                        {
+                            return Ok(result);
+                        }
+                        else
+                        {
+                            _logger.LogInformation("API Request (GET all Bettypes by TournamentId: "+tournamentid.Value+" ) no entries found");
+                            return NotFound("Bettype was not found with TournamentId: "+tournamentid.Value);
+                        }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all Bettypes by no criteria");
+                    var result = _bettypeRepository.GetAll();
+                    return Ok(result);
+                }
             }
-            else
+
+            catch(Exception e)
             {
-                return _bettypeRepository.GetAll();
+                _logger.LogError("API Request (GET all Bettypes by TournamentId) FAILED: " , e);
+                return BadRequest();
             }
+            
         }
 
-        //[HttpGet]
-        //public IEnumerable<Tournament> Get()
-        //{
-        //    return Datalayer.Tournaments.ToArray();
-        //}
-
-        //[HttpGet]
-        //public IEnumerable<Bettype2> Get(long? tournamentid)
-        //{
-
-        //    return GetBettypeByTournament(tournamentid).ToArray();
-        //}
-
-        //private List<Bettype2> GetBettypeByTournament(long? tournamentid)
-        //{
-        //    return Datalayer.GetBettypeByTournament(tournamentid);
-        //}
     }
 }

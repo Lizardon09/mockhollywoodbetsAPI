@@ -1,0 +1,706 @@
+2020-07-09 12:03:43,775  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:04:25,131  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by no criteria
+ 2020-07-09 12:04:31,748  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:04:31,877 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 12:05:15,640  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:05:15,652 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 12:06:02,203  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 12:06:02,222  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 12:06:02,225  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 12:06:02,374  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 12:06:02,770  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:06:15,483  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by no criteria
+ 2020-07-09 12:06:29,902  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:07:31,812 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 12:11:22,389  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 12:11:22,406  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 12:11:22,409  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 12:11:22,551  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 12:11:22,942  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:11:28,827  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by no criteria
+ 2020-07-09 12:11:33,302  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:13:03,721  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 12:13:03,738  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 12:13:03,740  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 12:13:03,881  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 12:13:04,268  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:14:16,944  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 12:14:16,961  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 12:14:16,963  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 12:14:17,103  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 12:14:17,493  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:14:44,900  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by no criteria
+ 2020-07-09 12:14:52,105  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:15:00,405  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:17:12,482  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 12:17:12,502  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 12:17:12,505  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 12:17:12,655  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 12:17:13,076  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 12:17:22,138  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by no criteria
+ 2020-07-09 12:17:25,411  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 12:17:48,225  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId
+ 2020-07-09 14:06:09,155  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 14:06:09,173  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 14:06:09,175  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 14:06:09,321  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 14:06:09,718  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 14:13:57,373  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 14:13:57,390  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 14:13:57,393  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\mockhollywoodbetsAPI-master\mockhollywoodbets
+ 2020-07-09 14:13:57,539  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 14:13:57,942  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 14:57:58,299  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 14:57:58,317  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 14:57:58,320  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 14:57:58,471  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 14:57:58,920  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 14:58:05,550  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId2
+ 2020-07-09 14:58:05,633 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 14:58:05,691 ERROR MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request (GET all Bettypes by TournamentId) FAILED: 
+ 2020-07-09 14:58:14,587  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId1
+ 2020-07-09 14:58:14,599 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 14:58:14,624 ERROR MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request (GET all Bettypes by TournamentId) FAILED: 
+ 2020-07-09 21:49:11,600  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:49:11,621  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:49:11,626  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:49:11,856  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:49:12,264  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:50:43,088  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:50:43,104  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:50:43,106  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:50:43,239  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:50:43,619  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:50:53,514  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:50:53,590 ERROR Microsoft.EntityFrameworkCore.Query.? [?] - MESSAGE: An exception occurred while iterating over the results of a query for context type 'MockHollywoodBets.Models.MockHollywoodBetsContext'.
+System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+ System.InvalidOperationException: FromSqlRaw or FromSqlInterpolated was called with non-composable SQL and with a query composing over it. Consider calling `AsEnumerable` after the FromSqlRaw or FromSqlInterpolated method to perform the composition on the client side.
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitFromSql(FromSqlExpression fromSqlExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_1(TableExpressionBase e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitExists(ExistsExpression existsExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitCase(CaseExpression caseExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitProjection(ProjectionExpression projectionExpression)
+   at Microsoft.EntityFrameworkCore.Query.SqlExpressionVisitor.VisitExtension(Expression extensionExpression)
+   at System.Linq.Expressions.Expression.Accept(ExpressionVisitor visitor)
+   at System.Linq.Expressions.ExpressionVisitor.Visit(Expression node)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.<VisitSelect>b__18_0(ProjectionExpression e)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GenerateList[T](IReadOnlyList`1 items, Action`1 generationAction, Action`1 joinAction)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.VisitSelect(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.QuerySqlGenerator.GetCommand(SelectExpression selectExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.RelationalCommandCache.GetRelationalCommand(IReadOnlyDictionary`2 parameters)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.InitializeReader(DbContext _, Boolean result)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+2020-07-09 21:50:53,647 ERROR MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: 
+ 2020-07-09 21:51:12,965  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:51:12,982  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:51:12,984  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:51:13,120  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:51:13,500  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:51:19,387  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:51:24,826 ERROR MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: 
+ 2020-07-09 21:51:31,910  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-09 21:51:51,014  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 10
+ 2020-07-09 21:51:51,023  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 10 ) no entries found
+ 2020-07-09 21:54:11,440  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:54:11,457  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:54:11,459  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:54:11,592  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:54:11,975  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:54:50,511  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:54:54,274  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 21:54:55,635  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 1
+ 2020-07-09 21:54:57,861  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:54:59,372  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 3
+ 2020-07-09 21:54:59,377  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 3 ) no entries found
+ 2020-07-09 21:55:21,347  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 10
+ 2020-07-09 21:55:21,356  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 10 ) no entries found
+ 2020-07-09 21:55:24,108  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:55:35,599  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId1
+ 2020-07-09 21:55:35,600  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API request hit: GET all Events by TournamentId
+ 2020-07-09 21:55:35,903  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API request hit: GET all MarketOdds by TournamentId
+ 2020-07-09 21:56:24,204  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:57:18,145  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:57:18,161  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:57:18,163  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:57:18,296  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:57:18,683  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:57:23,247  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:57:26,150  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 21:57:27,923  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 1
+ 2020-07-09 21:57:28,831  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:57:29,787  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 3
+ 2020-07-09 21:57:29,793  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 3 ) no entries found
+ 2020-07-09 21:58:12,254  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 21:58:12,273  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 21:58:12,275  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 21:58:12,488  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:58:12,904  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 21:58:15,174  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 21:58:17,027  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 21:58:18,132  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 1
+ 2020-07-09 21:58:18,705  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 2
+ 2020-07-09 21:58:26,639  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 3
+ 2020-07-09 21:58:26,645  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 3 ) no entries found
+ 2020-07-09 21:58:28,350  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId 5 and CountryId 10
+ 2020-07-09 21:58:28,355  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId 5 and CountryId 10 ) no entries found
+ 2020-07-09 21:59:35,803  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API request hit: GET all Events by TournamentId
+ 2020-07-09 21:59:35,804  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId1
+ 2020-07-09 21:59:36,095  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API request hit: GET all MarketOdds by TournamentId
+ 2020-07-09 22:00:23,216  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:00:23,233  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:00:23,236  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:00:23,368  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:00:23,756  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:07:38,248  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:11:55,947  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:11:55,964  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:11:55,966  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:11:56,096  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:11:56,473  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:12:05,554  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 22:12:06,581  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 22:12:11,955  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId1
+ 2020-07-09 22:12:11,956  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId1
+ 2020-07-09 22:12:12,263  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API request hit: GET all MarketOdds by TournamentId
+ 2020-07-09 22:12:45,997  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:21:03,347  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:21:03,364  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:21:03,366  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:21:03,508  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:21:03,888  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:21:08,374  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 22:21:09,908  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 22:21:10,770  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 22:21:13,636  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 22:21:13,645  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 22:21:13,937  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 22:21:13,948  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 22:21:45,852  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:21:45,869  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:21:45,871  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:21:46,002  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API request hit: GET all Sports by no criteria
+ 2020-07-09 22:21:46,403  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:34:10,636  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:34:10,653  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:34:10,656  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:34:10,809  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:34:11,188  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:34:15,383  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:34:31,775  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API request hit: GET all Countries by SportId
+ 2020-07-09 22:34:53,728  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:46:44,635  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:46:44,654  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:46:44,657  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:46:44,824  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:46:45,227  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:46:50,504  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:46:54,496  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 7
+ 2020-07-09 22:46:55,857  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 22:46:55,863  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 22:47:04,904  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 22:47:08,632  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 6
+ 2020-07-09 22:47:08,638  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 6 ) no entries found
+ 2020-07-09 22:47:10,315  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 22:47:10,321  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 22:47:12,686  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 9 and CountryId: 1
+ 2020-07-09 22:47:12,696  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 9 and CountryId: 1 ) no entries found
+ 2020-07-09 22:47:14,326  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 22:47:16,444  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 22:47:18,376  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-09 22:47:18,380  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-09 22:47:18,672  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-09 22:47:35,502  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:57:46,511  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 22:57:46,527  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 22:57:46,530  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 22:57:46,684  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:57:47,075  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 22:59:00,033  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 22:59:02,733  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 22:59:04,665  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 7
+ 2020-07-09 22:59:07,846  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 22:59:07,851  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:00:14,949  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:00:14,984  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:00:14,991  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:00:18,470  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:00:18,520  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:00:18,528  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:00:23,865  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:00:23,908  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:00:23,916  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:00:37,985  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:00:38,030  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:00:38,034  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:00:48,930  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:00:48,989  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:00:48,996  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:01:49,973  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:01:50,026  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:01:50,034  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:02:01,911  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:02:01,961  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:02:01,967  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:02:26,422  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:02:26,465  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:02:26,471  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:02:31,793  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:02:31,839  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:02:31,845  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:02:38,171  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:02:38,230  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:02:38,237  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:03:01,195  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:03:01,251  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:03:01,256  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:03:58,451  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:03:58,502  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:03:58,508  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:04:08,334  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:04:08,387  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:04:08,392  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:04:16,764  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:04:16,825  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:04:16,832  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:04:24,264  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:04:26,666  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:04:30,019  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 7
+ 2020-07-09 23:04:31,453  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:04:31,456  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:04:44,683  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:05,615  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:05,669  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:08,236  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:08,290  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:12,498  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:12,562  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:15,080  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:15,141  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:16,477  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:16,546  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:20,383  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:20,489  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:23,497  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:05:23,502  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:05:37,780  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:37,830  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:05:37,834  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:05:44,290  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:05:46,218  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:05:48,240  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:05:48,245  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:06:42,270  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:06:42,325  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:06:42,332  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:06:57,227  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:06:57,347  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:06:57,354  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:07:29,196  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:07:29,312  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:07:29,318  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:07:51,445  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:07:51,518  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:07:51,526  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:07:53,584  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:07:53,702  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:07:53,708  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:08:11,455  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:08:31,526  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:08:59,232  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:09:44,348  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:09:45,561  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:09:51,047  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:09:54,635  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:09:59,716  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:10:29,341  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:10:33,750  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:11:00,857  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:11:09,415  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:11:17,133  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:11:18,403  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:11:19,094  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:11:20,067  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:11:20,072  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:11:23,822  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 10
+ 2020-07-09 23:11:23,828  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 10 ) no entries found
+ 2020-07-09 23:11:44,424  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:11:44,546  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:11:51,210  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:12:22,092  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:12:25,610  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:30:19,408  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-09 23:30:19,426  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-09 23:30:19,428  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\source\repos\Lizardon09\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-09 23:30:19,581  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:30:19,964  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-09 23:31:59,281  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:32:03,025  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:32:04,372  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:32:05,570  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:32:08,275  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:32:08,280  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:32:15,459  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 10
+ 2020-07-09 23:32:15,466  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 10 ) no entries found
+ 2020-07-09 23:32:24,382  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:32:47,440  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:32:49,929  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:32:51,405  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:32:52,088  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:32:53,099  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:32:53,106  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:33:17,839  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:33:17,932  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:33:23,205  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:33:23,336  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:33:27,971  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:33:28,061  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:33:35,115  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:33:35,222  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:33:37,469  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:33:37,574  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:33:39,388  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:33:41,701  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:33:52,931  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:33:52,934  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:34:10,992  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 10
+ 2020-07-09 23:34:10,997  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 10 ) no entries found
+ 2020-07-09 23:34:13,592  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 10
+ 2020-07-09 23:34:13,595  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 10 ) no entries found
+ 2020-07-09 23:34:17,431  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:34:17,434  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:35:01,379  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:35:02,006  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:35:02,701  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:35:02,705  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:35:26,542  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:35:26,661  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:35:31,182  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:35:31,275  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:35:35,453  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:35:35,550  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:35:36,769  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:35:37,295  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:35:38,214  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:35:38,218  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:38:29,922  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:38:29,998  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:31,780  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:31,883  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:39,154  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:39,254  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:44,857  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:44,957  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:49,245  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:49,346  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:53,649  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:53,755  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:39:59,053  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:39:59,143  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:42:59,554  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:42:59,631  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:43:11,745  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:43:11,884  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:43:16,021  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:43:18,109  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:43:23,464  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:43:23,467  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:43:52,661  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:43:54,909  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 6
+ 2020-07-09 23:43:54,913  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 6 ) no entries found
+ 2020-07-09 23:44:02,698  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:44:02,797  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 6
+ 2020-07-09 23:44:02,802  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 6 ) no entries found
+ 2020-07-09 23:44:15,657  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:46:12,945  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:46:13,042  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:46:46,924  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:46:47,022  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:48:20,836  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:48:20,840  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:48:53,320  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:48:53,367  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:48:53,373  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:49:02,167  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:49:02,274  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:49:02,278  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:49:07,389  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:49:07,496  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:49:07,500  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:49:11,526  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:49:11,644  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:49:11,648  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:51:08,463  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:51:09,632  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:51:10,247  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:51:11,485  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 9
+ 2020-07-09 23:51:11,488  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 9 ) no entries found
+ 2020-07-09 23:51:14,703  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-09 23:51:15,557  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:51:16,149  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:51:16,156  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:52:59,484  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 3
+ 2020-07-09 23:52:59,489  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 3 ) no entries found
+ 2020-07-09 23:53:00,151  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 10
+ 2020-07-09 23:53:00,154  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 5 and CountryId: 10 ) no entries found
+ 2020-07-09 23:53:00,960  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:53:05,868  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-09 23:53:06,797  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 2
+ 2020-07-09 23:53:08,936  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:53:08,937  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:53:09,231  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:53:09,241  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:54:49,207  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:54:49,295  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:54:49,299  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:54:49,655  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 2020-07-09 23:54:49,662  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request (GET all MarketOdds by TournamentId: 2 ) no entries found
+ 2020-07-09 23:54:51,967  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-09 23:54:52,074  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 2
+ 2020-07-09 23:54:52,078  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 2
+ 2020-07-09 23:54:52,378  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 2
+ 

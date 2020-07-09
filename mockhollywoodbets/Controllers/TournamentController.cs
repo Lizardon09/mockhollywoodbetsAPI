@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
@@ -18,7 +17,6 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class TournamentController : ControllerBase
     {
-        private static DALLogic Datalayer { get; set; }
 
         private readonly ITournamentRepository _tournamentRepository;
 
@@ -27,7 +25,6 @@ namespace MockHollywoodBets.Controllers
         public TournamentController(ILogger<TournamentController> logger, ITournamentRepository tournamentRepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _tournamentRepository = tournamentRepository;
         }
 
@@ -35,38 +32,48 @@ namespace MockHollywoodBets.Controllers
         // GET api/tournament
         // GET api/tournament?sportid={sportid}&countryid={countryid}
         [HttpGet]
-        public IQueryable<Tournament> Get(long? sportid, long? countryid)
+        public IActionResult Get(long? sportid, long? countryid)
         {
-            if(sportid.HasValue && countryid.HasValue)
+
+            try
             {
-                return _tournamentRepository.Get(sportid, countryid);
+                if (sportid.HasValue && countryid.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: GET all Tournaments by SportId: " + sportid + " and CountryId: " + countryid);
+                    var result = _tournamentRepository.Get(sportid, countryid);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all Tournaments by SportId: " + sportid + " and CountryId: " + countryid + " ) no entries found");
+                        return NotFound("Tournaments were not found with SportId: " + sportid + " and CountryId: " + countryid);
+                    }
+
+                }
+                else if (!sportid.HasValue && !countryid.HasValue)
+                {
+                    _logger.LogInformation("API Request hit: GET all Tournaments by no criteria");
+                    var result = _tournamentRepository.GetAll();
+                    return Ok(result);
+                }
+
+                else
+                {
+                    _logger.LogError("API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: ");
+                    return BadRequest("API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: ");
+                }
             }
 
-            else
+            catch (Exception e)
             {
-                return _tournamentRepository.GetAll();
+                _logger.LogError("API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: ", e);
+                return BadRequest("API Request (GET all Tournaments by SpoirtId and CountryId) FAILED: ");
             }
  
         }
-
-        //[HttpGet]
-        //public IEnumerable<Tournament> Get()
-        //{
-        //    return Datalayer.Tournaments.ToArray();
-        //}
-
-        //[HttpGet]
-        //public IEnumerable<Tournament2> Get(long? sportid, long? countryid)
-        //{
-
-        //    return GetTournamentBySportCountry(sportid, countryid).ToArray();
-        //}
-
-        //private List<Tournament2> GetTournamentBySportCountry(long? sportid, long? countryid)
-        //{
-
-        //    return Datalayer.GetTournamentsByCountrySport(countryid, sportid);
-        //}
 
     }
 }

@@ -57,11 +57,10 @@ namespace MockHollywoodBets
             services.AddScoped<IBettypeRepository, BettypeRepository>();
             services.AddScoped<IMarketRepository, MarketRepository>();
             services.AddScoped<IDataBase, DBService>();
-            //services.AddScoped<IGlobalRepository, GlobalRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -80,6 +79,9 @@ namespace MockHollywoodBets
             {
                 endpoints.MapControllers();
             });
+
+            loggerFactory.AddLog4Net();
+
         }
     }
 }

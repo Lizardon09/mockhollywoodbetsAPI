@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
@@ -20,8 +19,6 @@ namespace MockHollywoodBets.Controllers
     public class SportCountryController : ControllerBase
     {
 
-        private static DALLogic Datalayer { get; set; }
-
         private readonly ISportCountryRepository _sportcountryRepository;
 
         private readonly ILogger<SportCountryController> _logger;
@@ -29,54 +26,46 @@ namespace MockHollywoodBets.Controllers
         public SportCountryController(ILogger<SportCountryController> logger, ISportCountryRepository sportcountryRepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _sportcountryRepository = sportcountryRepository;
         }
 
         [HttpGet]
-        public IQueryable<Country> Get()
+        public IActionResult Get(long? sportid)
         {
-            return _sportcountryRepository.GetAll();
+
+            try
+            {
+                if (sportid.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: GET all Countries by SportId: " + sportid.Value);
+                    var result = _sportcountryRepository.GetAll(sportid);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all Countries by SportId: " + sportid.Value + " ) no entries found");
+                        return NotFound("Bettype was not found with TournamentId: " + sportid.Value);
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all Countries by no criteria");
+                    var result = _sportcountryRepository.GetAll();
+                    return Ok(result);
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (GET all Countries by SportId) FAILED: ", e);
+                return BadRequest();
+            }
+
         }
-
-        [HttpGet("{sportid}")]
-        public IQueryable<Country> Get(long sportid)
-        {
-            return _sportcountryRepository.GetAll(sportid);
-        }
-
-        //[HttpGet]
-        //public IEnumerable<Country> Get()
-        //{
-        //    return Datalayer.Countries.ToArray();
-        //}
-
-        //[HttpGet]
-        //public IEnumerable<Country2> Get(long? sportid)
-        //{
-        //    if (sportid.HasValue)
-        //    {
-        //        return GetCountryBySport(sportid).ToArray();
-        //    }
-        //    else
-        //    {
-        //        return Datalayer.Countries.ToArray();
-        //    }
-        //}
-
-        //private List<Country2> GetCountryBySport(long? sportID)
-        //{
-        //    foreach (var sportcountry in Datalayer.SportCountries)
-        //    {
-        //        if (sportcountry.SportID == sportID)
-        //        {
-        //            return Datalayer.GetCountryByID(sportcountry.CountryID);
-        //        }
-        //    }
-
-        //    return new List<Country2>();
-        //}
-
 
     }
 }

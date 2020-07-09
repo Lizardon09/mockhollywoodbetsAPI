@@ -32,6 +32,11 @@ namespace MockHollywoodBets.DataManagers.Repository.Implimentations
             return _dbService.dbContext().SportTree.FromSqlInterpolated($"EXECUTE dbo.GetSportById {id}").AsEnumerable().FirstOrDefault();
         }
 
+        public IQueryable<SportTree> Get(long? sportid)
+        {
+            return _dbService.dbContext().SportTree.FromSqlInterpolated($"EXECUTE dbo.GetSportById {sportid}").AsQueryable();
+        }
+
         public IQueryable<SportTree> GetAll()
         {
             return _dbService.dbContext().SportTree.FromSqlInterpolated($"EXECUTE dbo.GetAllSports").AsQueryable();

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models2;
 using MockHollywoodBets.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
@@ -18,7 +17,6 @@ namespace MockHollywoodBets.Controllers
     [EnableCors("CorsPolicy")]
     public class EventController : ControllerBase
     {
-        private static DALLogic Datalayer { get; set; }
 
         private readonly IEventRepository _eventRepository;
 
@@ -27,42 +25,45 @@ namespace MockHollywoodBets.Controllers
         public EventController(ILogger<EventController> logger, IEventRepository eventRepository)
         {
             _logger = logger;
-            Datalayer = new DALLogic();
             _eventRepository = eventRepository;
         }
 
         [HttpGet]
-        public IQueryable<Event> Get(long? tournamentid)
+        public IActionResult Get(long? tournamentid)
         {
-            if (tournamentid.HasValue)
+            try
             {
-                return _eventRepository.Get(tournamentid);
+                if (tournamentid.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: GET all Events by TournamentId: " + tournamentid.Value);
+                    var result = _eventRepository.Get(tournamentid);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all Events by TournamentId: " + tournamentid.Value + " ) no entries found");
+                        return NotFound("Bettype was not found with TournamentId: " + tournamentid.Value);
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all Events by no criteria");
+                    var result = _eventRepository.GetAll();
+                    return Ok(result);
+                }
             }
 
-            else
+            catch (Exception e)
             {
-                return _eventRepository.GetAll();
+                _logger.LogError("API Request (GET all Events by TournamentId) FAILED: ", e);
+                return BadRequest();
             }
 
         }
 
-        //[HttpGet]
-        //public IEnumerable<Tournament> Get()
-        //{
-        //    return Datalayer.Tournaments.ToArray();
-        //}
-
-        //[HttpGet]
-        //public IEnumerable<Event2> Get(long? tournamentid)
-        //{
-
-        //    return GetTournamentBySportCountry(tournamentid).ToArray();
-        //}
-
-        //private List<Event2> GetTournamentBySportCountry(long? tournamentid)
-        //{
-
-        //    return Datalayer.Events.FindAll(x => x.TournamentID == tournamentid);
-        //}
     }
 }

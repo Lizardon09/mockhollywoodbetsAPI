@@ -38,7 +38,7 @@ namespace MockHollywoodBets.DataManagers.Repository.Implimentations
             return _dbService.dbContext().Country.FromSqlInterpolated($"EXECUTE dbo.GetAllCountries").AsQueryable();
         }
 
-        public IQueryable<Country> GetAll(long id)
+        public IQueryable<Country> GetAll(long? id)
         {
             return _dbService.dbContext().Country.FromSqlInterpolated($"EXECUTE dbo.GetCountryBySportId {id}").AsQueryable();
         }
