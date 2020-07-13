@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MockHollywoodBetsDAL.Models;
+using Dapper;
 
 namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 {
@@ -20,12 +21,29 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 
         public int Add(Event entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertEvent {entity.Name},{entity.Date},{entity.TournamentId}");
+                return result;
+            }
+        }
+
+        public int Update(Event entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateEvent {entity.Id},{entity.Name},{entity.Date},{entity.TournamentId}");
+                return result;
+            }
         }
 
         public int Delete(Event entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteEvent {entity.Id}");
+                return result;
+            }
         }
 
         public Event Get(long id)
@@ -43,10 +61,9 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             return _dbService.dbContext().Event.FromSqlInterpolated($"EXECUTE dbo.GetAllEvents").AsQueryable();
         }
 
-        public int Update(Event entity)
+        public IQueryable<Event> GetEvent(long? eventid)
         {
-            throw new NotImplementedException();
+            return _dbService.dbContext().Event.FromSqlInterpolated($"EXECUTE dbo.GetEventByEventId {eventid}").AsQueryable();
         }
-
     }
 }

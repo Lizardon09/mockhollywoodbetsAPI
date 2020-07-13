@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MockHollywoodBetsDAL.Models;
+using Dapper;
 
 namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 {
@@ -20,12 +21,29 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 
         public int Add(Bettype entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertBettype {entity.Name}");
+                return result;
+            }
+        }
+
+        public int Update(Bettype entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateBettype {entity.Id},{entity.Name}");
+                return result;
+            }
         }
 
         public int Delete(Bettype entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteBettype {entity.Id}");
+                return result;
+            }
         }
 
         public IQueryable<Bettype> Get(long? tournamentid)
@@ -43,9 +61,9 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             return _dbService.dbContext().Bettype.FromSqlInterpolated($"EXECUTE dbo.GetAllBettypes").AsQueryable();
         }
 
-        public int Update(Bettype entity)
+        public IQueryable<Bettype> GetBettype(long? bettypeid)
         {
-            throw new NotImplementedException();
+            return _dbService.dbContext().Bettype.FromSqlInterpolated($"EXECUTE dbo.GetBettypeByBettypeId {bettypeid}").AsQueryable();
         }
     }
 }

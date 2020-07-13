@@ -16,28 +16,28 @@ namespace CRUDMockHollywoodBets.Controllers
     [Route("api/CRUD/[controller]")]
     [ApiController]
     [EnableCors("CorsPolicy")]
-    public class SportController : ControllerBase
+    public class BettypeController : ControllerBase
     {
-        private readonly ISportTreeRepository _sportTreeRepository;
+        private readonly IBettypeRepository _bettypeRepository;
 
-        private readonly ILogger<SportController> _logger;
+        private readonly ILogger<BettypeController> _logger;
 
-        public SportController(ILogger<SportController> logger, ISportTreeRepository sporttreerepository)
+        public BettypeController(ILogger<BettypeController> logger, IBettypeRepository bettyperepository)
         {
             _logger = logger;
-            _sportTreeRepository = sporttreerepository;
+            _bettypeRepository = bettyperepository;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] SportTree sportTree)
+        public IActionResult Post([FromBody] Bettype bettype)
         {
             try
             {
-                if (sportTree != null)
+                if (bettype != null)
                 {
 
-                    _logger.LogInformation("API Request hit: INSERT Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Add(sportTree);
+                    _logger.LogInformation("API Request hit: INSERT Bettype : " + bettype.Name);
+                    var result = _bettypeRepository.Add(bettype);
 
                     if (result == 0)
                     {
@@ -45,35 +45,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (INSERT Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (INSERT Bettype : " + bettype.Name + " ) not committed");
                         return NotFound("Failed: INSERT could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (INSERT Sport) with null entry");
+                    _logger.LogInformation("API Request hit (INSERT Bettype) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (INSERT Sport) FAILED: ", e);
+                _logger.LogError("API Request (INSERT Bettype) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] SportTree sportTree)
+        public IActionResult Put([FromBody] Bettype bettype)
         {
             try
             {
-                if (sportTree != null)
+                if (bettype != null)
                 {
 
-                    _logger.LogInformation("API Request hit: UPDATE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Update(sportTree);
+                    _logger.LogInformation("API Request hit: UPDATE Bettype : " + bettype.Name);
+                    var result = _bettypeRepository.Update(bettype);
 
                     if (result == 0)
                     {
@@ -81,35 +81,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (UPDATE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (UPDATE Bettype : " + bettype.Name + " ) not committed");
                         return NotFound("Failed: UPDATE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (UPDATE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (UPDATE Bettype) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (UPDATE Sport) FAILED: ", e);
+                _logger.LogError("API Request (UPDATE Bettype) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromBody] SportTree sportTree)
+        public IActionResult Delete([FromBody] Bettype bettype)
         {
             try
             {
-                if (sportTree != null)
+                if (bettype != null)
                 {
 
-                    _logger.LogInformation("API Request hit: DELETE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Delete(sportTree);
+                    _logger.LogInformation("API Request hit: DELETE Bettype : " + bettype.Name);
+                    var result = _bettypeRepository.Delete(bettype);
 
                     if (result == 0)
                     {
@@ -117,60 +117,61 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (DELETE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (DELETE Bettype : " + bettype.Name + " ) not committed");
                         return NotFound("Failed: DELETE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (DELETE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (DELETE Bettype) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (DELETE Sport) FAILED: ", e);
+                _logger.LogError("API Request (DELETE Bettype) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpGet]
-        public IActionResult Get(long? sportid)
+        public IActionResult Get(long? bettype)
         {
             try
             {
-                if (sportid.HasValue)
+                if (bettype.HasValue)
                 {
 
-                    _logger.LogInformation("API Request hit: GET all Sports by Id: " + sportid.Value);
-                    var result = _sportTreeRepository.Get(sportid.Value);
+                    _logger.LogInformation("API Request hit: GET all Sports by SportId: " + bettype.Value);
+                    var result = _bettypeRepository.GetBettype(bettype.Value);
                     if (result.ToList().Any())
                     {
                         return Ok(result);
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (GET all Sports by SportId: " + sportid.Value + " ) no entries found");
-                        return NotFound("Sport was not found with Id: " + sportid.Value);
+                        _logger.LogInformation("API Request (GET all Sports by SportId: " + bettype.Value + " ) no entries found");
+                        return NotFound("Bettype was not found with SportId: " + bettype.Value);
                     }
 
                 }
                 else
                 {
                     _logger.LogInformation("API Request hit: GET all Sports by no criteria");
-                    var result = _sportTreeRepository.GetAll();
+                    var result = _bettypeRepository.GetAll();
                     return Ok(result);
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (GET all Sports by Id) FAILED: ", e);
+                _logger.LogError("API Request (GET all Sports by SportId) FAILED: ", e);
                 return BadRequest();
             }
 
         }
+
     }
 }

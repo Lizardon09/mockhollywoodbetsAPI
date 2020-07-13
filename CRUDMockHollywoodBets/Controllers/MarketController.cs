@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,34 +8,35 @@ using Microsoft.AspNetCore.Cors;
 using MockHollywoodBetsDAL.DataManagers;
 using MockHollywoodBetsDAL.DataManagers.Repository;
 using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
+using System;
 
 namespace CRUDMockHollywoodBets.Controllers
 {
     [Route("api/CRUD/[controller]")]
     [ApiController]
     [EnableCors("CorsPolicy")]
-    public class SportController : ControllerBase
+    public class MarketController : ControllerBase
     {
-        private readonly ISportTreeRepository _sportTreeRepository;
+        private readonly IMarketRepository _marketRepository;
 
-        private readonly ILogger<SportController> _logger;
+        private readonly ILogger<MarketController> _logger;
 
-        public SportController(ILogger<SportController> logger, ISportTreeRepository sporttreerepository)
+        public MarketController(ILogger<MarketController> logger, IMarketRepository _marketrepository)
         {
             _logger = logger;
-            _sportTreeRepository = sporttreerepository;
+            _marketRepository = _marketrepository;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] SportTree sportTree)
+        public IActionResult Post([FromBody] Market market)
         {
             try
             {
-                if (sportTree != null)
+                if (market != null)
                 {
 
-                    _logger.LogInformation("API Request hit: INSERT Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Add(sportTree);
+                    _logger.LogInformation("API Request hit: INSERT Market : " + market.Name);
+                    var result = _marketRepository.Add(market);
 
                     if (result == 0)
                     {
@@ -45,35 +44,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (INSERT Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (INSERT Market : " + market.Name + " ) not committed");
                         return NotFound("Failed: INSERT could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (INSERT Sport) with null entry");
+                    _logger.LogInformation("API Request hit (INSERT Market) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (INSERT Sport) FAILED: ", e);
+                _logger.LogError("API Request (INSERT Market) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] SportTree sportTree)
+        public IActionResult Put([FromBody] Market market)
         {
             try
             {
-                if (sportTree != null)
+                if (market != null)
                 {
 
-                    _logger.LogInformation("API Request hit: UPDATE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Update(sportTree);
+                    _logger.LogInformation("API Request hit: UPDATE Market : " + market.Name);
+                    var result = _marketRepository.Update(market);
 
                     if (result == 0)
                     {
@@ -81,35 +80,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (UPDATE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (UPDATE Market : " + market.Name + " ) not committed");
                         return NotFound("Failed: UPDATE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (UPDATE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (UPDATE Market) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (UPDATE Sport) FAILED: ", e);
+                _logger.LogError("API Request (UPDATE Market) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromBody] SportTree sportTree)
+        public IActionResult Delete([FromBody] Market market)
         {
             try
             {
-                if (sportTree != null)
+                if (market != null)
                 {
 
-                    _logger.LogInformation("API Request hit: DELETE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Delete(sportTree);
+                    _logger.LogInformation("API Request hit: DELETE Market : " + market.Name);
+                    var result = _marketRepository.Delete(market);
 
                     if (result == 0)
                     {
@@ -117,57 +116,57 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (DELETE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (DELETE Market : " + market.Name + " ) not committed");
                         return NotFound("Failed: DELETE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (DELETE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (DELETE Market) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (DELETE Sport) FAILED: ", e);
+                _logger.LogError("API Request (DELETE Market) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpGet]
-        public IActionResult Get(long? sportid)
+        public IActionResult Get(long? marketid)
         {
             try
             {
-                if (sportid.HasValue)
+                if (marketid.HasValue)
                 {
 
-                    _logger.LogInformation("API Request hit: GET all Sports by Id: " + sportid.Value);
-                    var result = _sportTreeRepository.Get(sportid.Value);
+                    _logger.LogInformation("API Request hit: GET all Markets by Id: " + marketid.Value);
+                    var result = _marketRepository.GetMarket(marketid.Value);
                     if (result.ToList().Any())
                     {
                         return Ok(result);
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (GET all Sports by SportId: " + sportid.Value + " ) no entries found");
-                        return NotFound("Sport was not found with Id: " + sportid.Value);
+                        _logger.LogInformation("API Request (GET all Markets by SportId: " + marketid.Value + " ) no entries found");
+                        return NotFound("Sport was not found with Id: " + marketid.Value);
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit: GET all Sports by no criteria");
-                    var result = _sportTreeRepository.GetAll();
+                    _logger.LogInformation("API Request hit: GET all Markets by no criteria");
+                    var result = _marketRepository.GetAll();
                     return Ok(result);
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (GET all Sports by Id) FAILED: ", e);
+                _logger.LogError("API Request (GET all Markets by Id) FAILED: ", e);
                 return BadRequest();
             }
 

@@ -9,5 +9,6 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Interfaces
     public interface ISportCountryRepository : IDataRepository<Country>
     {
         IQueryable<Country> GetAll(long? id);
+        IQueryable<Country> Get(long? countryid);
     }
 }

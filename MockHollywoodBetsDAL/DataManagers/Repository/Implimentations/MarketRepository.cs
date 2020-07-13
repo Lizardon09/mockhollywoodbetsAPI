@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dapper;
+using Microsoft.EntityFrameworkCore;
 using MockHollywoodBetsDAL.CustomModels;
 using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
 using MockHollywoodBetsDAL.Models;
@@ -20,12 +21,29 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 
         public int Add(Market entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertMarket {entity.Name}");
+                return result;
+            }
+        }
+
+        public int Update(Market entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateMarket {entity.Id},{entity.Name}");
+                return result;
+            }
         }
 
         public int Delete(Market entity)
         {
-            throw new NotImplementedException();
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteMarket {entity.Id}");
+                return result;
+            }
         }
 
         IQueryable<MarketOdd> IMarketRepository.GetAll()
@@ -48,10 +66,9 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             throw new NotImplementedException();
         }
 
-        public int Update(Market entity)
+        public IQueryable<MarketOdd> GetMarket(long? marketid)
         {
-            throw new NotImplementedException();
+            return _dbService.dbContext().MarketOdd.FromSqlInterpolated($"EXECUTE dbo.GetMarketByMarketId {marketid}").AsQueryable();
         }
-
     }
 }

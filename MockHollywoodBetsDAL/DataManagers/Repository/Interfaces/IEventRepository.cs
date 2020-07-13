@@ -9,5 +9,6 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Interfaces
     public interface IEventRepository : IDataRepository<Event>
     {
         IQueryable<Event> Get(long? tournamentid);
+        IQueryable<Event> GetEvent(long? eventid);
     }
 }

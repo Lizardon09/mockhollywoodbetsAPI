@@ -11,5 +11,6 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Interfaces
     {
         IQueryable<MarketOdd> Get(long? tournamentid);
         IQueryable<MarketOdd> GetAll();
+        IQueryable<MarketOdd> GetMarket(long? marketid);
     }
 }

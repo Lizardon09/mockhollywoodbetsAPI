@@ -16,28 +16,28 @@ namespace CRUDMockHollywoodBets.Controllers
     [Route("api/CRUD/[controller]")]
     [ApiController]
     [EnableCors("CorsPolicy")]
-    public class SportController : ControllerBase
+    public class TournamentController : ControllerBase
     {
-        private readonly ISportTreeRepository _sportTreeRepository;
+        private readonly ITournamentRepository _tournamentRepository;
 
-        private readonly ILogger<SportController> _logger;
+        private readonly ILogger<TournamentController> _logger;
 
-        public SportController(ILogger<SportController> logger, ISportTreeRepository sporttreerepository)
+        public TournamentController(ILogger<TournamentController> logger, ITournamentRepository _tournamentrepository)
         {
             _logger = logger;
-            _sportTreeRepository = sporttreerepository;
+            _tournamentRepository = _tournamentrepository;
         }
 
         [HttpPost]
-        public IActionResult Post([FromBody] SportTree sportTree)
+        public IActionResult Post([FromBody] Tournament tournament)
         {
             try
             {
-                if (sportTree != null)
+                if (tournament != null)
                 {
 
-                    _logger.LogInformation("API Request hit: INSERT Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Add(sportTree);
+                    _logger.LogInformation("API Request hit: INSERT Tournament : " + tournament.Name);
+                    var result = _tournamentRepository.Add(tournament);
 
                     if (result == 0)
                     {
@@ -45,35 +45,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (INSERT Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (INSERT Tournament : " + tournament.Name + " ) not committed");
                         return NotFound("Failed: INSERT could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (INSERT Sport) with null entry");
+                    _logger.LogInformation("API Request hit (INSERT Tournament) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (INSERT Sport) FAILED: ", e);
+                _logger.LogError("API Request (INSERT Tournament) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpPut]
-        public IActionResult Put([FromBody] SportTree sportTree)
+        public IActionResult Put([FromBody] Tournament tournament)
         {
             try
             {
-                if (sportTree != null)
+                if (tournament != null)
                 {
 
-                    _logger.LogInformation("API Request hit: UPDATE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Update(sportTree);
+                    _logger.LogInformation("API Request hit: UPDATE Tournament : " + tournament.Name);
+                    var result = _tournamentRepository.Update(tournament);
 
                     if (result == 0)
                     {
@@ -81,35 +81,35 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (UPDATE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (UPDATE Tournament : " + tournament.Name + " ) not committed");
                         return NotFound("Failed: UPDATE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (UPDATE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (UPDATE Tournament) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (UPDATE Sport) FAILED: ", e);
+                _logger.LogError("API Request (UPDATE Tournament) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromBody] SportTree sportTree)
+        public IActionResult Delete([FromBody] Tournament tournament)
         {
             try
             {
-                if (sportTree != null)
+                if (tournament != null)
                 {
 
-                    _logger.LogInformation("API Request hit: DELETE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Delete(sportTree);
+                    _logger.LogInformation("API Request hit: DELETE Tournament : " + tournament.Name);
+                    var result = _tournamentRepository.Delete(tournament);
 
                     if (result == 0)
                     {
@@ -117,57 +117,57 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (DELETE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (DELETE Tournament : " + tournament.Name + " ) not committed");
                         return NotFound("Failed: DELETE could not commit");
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit (DELETE Sport) with null entry");
+                    _logger.LogInformation("API Request hit (DELETE Tournament) with null entry");
                     return BadRequest("Failed: null entry");
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (DELETE Sport) FAILED: ", e);
+                _logger.LogError("API Request (DELETE Tournament) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
 
         [HttpGet]
-        public IActionResult Get(long? sportid)
+        public IActionResult Get(long? tournamentid)
         {
             try
             {
-                if (sportid.HasValue)
+                if (tournamentid.HasValue)
                 {
 
-                    _logger.LogInformation("API Request hit: GET all Sports by Id: " + sportid.Value);
-                    var result = _sportTreeRepository.Get(sportid.Value);
+                    _logger.LogInformation("API Request hit: GET all Tournaments by Id: " + tournamentid.Value);
+                    var result = _tournamentRepository.GetTournament(tournamentid.Value);
                     if (result.ToList().Any())
                     {
                         return Ok(result);
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (GET all Sports by SportId: " + sportid.Value + " ) no entries found");
-                        return NotFound("Sport was not found with Id: " + sportid.Value);
+                        _logger.LogInformation("API Request (GET all Tournaments by SportId: " + tournamentid.Value + " ) no entries found");
+                        return NotFound("Sport was not found with Id: " + tournamentid.Value);
                     }
 
                 }
                 else
                 {
-                    _logger.LogInformation("API Request hit: GET all Sports by no criteria");
-                    var result = _sportTreeRepository.GetAll();
+                    _logger.LogInformation("API Request hit: GET all Tournaments by no criteria");
+                    var result = _tournamentRepository.GetAll();
                     return Ok(result);
                 }
             }
 
             catch (Exception e)
             {
-                _logger.LogError("API Request (GET all Sports by Id) FAILED: ", e);
+                _logger.LogError("API Request (GET all Tournaments by Id) FAILED: ", e);
                 return BadRequest();
             }
 
