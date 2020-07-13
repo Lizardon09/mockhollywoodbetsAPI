@@ -18,7 +18,7 @@ using MockHollywoodBetsDAL.DataManagers.Repository.Implimentations;
 using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
 using MockHollywoodBetsDAL.Models;
 
-namespace MockHollywoodBets
+namespace CRUDMockHollywoodBets
 {
     public class Startup
     {
@@ -39,13 +39,6 @@ namespace MockHollywoodBets
             }
             );
 
-            services.AddControllers();
-
-            services.AddControllersWithViews()
-                .AddNewtonsoftJson(options =>
-                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );
-
             services.AddCors(options =>
             {
                 options.AddPolicy("CorsPolicy",
@@ -63,6 +56,8 @@ namespace MockHollywoodBets
             services.AddScoped<IMarketRepository, MarketRepository>();
             services.AddScoped<IBetRepository, BetRepository>();
             services.AddScoped<IDataBase, DBService>();
+
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -87,7 +82,6 @@ namespace MockHollywoodBets
             });
 
             loggerFactory.AddLog4Net();
-
         }
     }
 }

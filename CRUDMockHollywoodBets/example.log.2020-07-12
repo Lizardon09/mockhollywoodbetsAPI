@@ -1,0 +1,141 @@
+2020-07-12 15:31:43,499  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 15:31:43,526  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 15:31:43,529  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 15:31:43,811  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 15:31:44,328  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 17:42:05,996  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 17:42:06,014  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 17:42:06,016  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 17:42:06,261  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 17:42:06,697  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 17:44:11,768  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 17:44:11,789  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 17:44:11,793  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 17:44:11,967  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 17:44:12,433  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 17:47:05,147  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 17:47:05,167  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 17:47:05,170  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 17:47:05,347  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 17:47:05,797  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:03:12,648  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:03:12,666  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:03:12,669  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:03:12,857  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:03:13,370  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:09:34,353  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:09:34,374  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:09:34,377  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:09:34,554  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:09:35,005  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:10:28,260  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:10:28,279  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:10:28,283  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:10:28,458  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:10:28,910  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:11:40,763  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:11:40,788  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:11:40,793  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:11:40,989  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:11:41,440  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:24:15,154  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:24:15,176  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:24:15,179  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:24:15,369  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:24:15,850  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:24:45,993  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:24:46,016  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:24:46,020  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:24:46,208  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:24:46,655  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:43:04,997  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:43:05,018  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:43:05,020  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:43:05,191  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:43:05,628  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 19:47:26,357  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 19:47:26,376  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 19:47:26,380  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 19:47:26,562  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 19:47:27,048  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:46:58,782  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:46:58,804  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:46:58,807  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 22:46:59,057  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 22:46:59,531  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:47:57,589  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:47:57,611  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:47:57,615  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 22:47:57,806  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 22:47:58,267  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:50:03,766  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:50:03,789  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:50:03,793  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 22:50:03,983  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 22:50:04,444  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 22:56:50,405  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 22:56:50,424  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 22:56:50,427  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 22:56:50,677  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 22:56:51,133  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:06:11,579  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:06:11,603  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:06:11,607  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:06:11,797  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:06:12,280  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:14:59,917  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:14:59,939  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:14:59,943  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:15:00,135  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:15:00,584  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:20:53,332  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:20:53,354  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:20:53,358  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:20:53,540  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:20:54,012  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:25:36,336  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:25:36,362  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:25:36,365  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:25:36,541  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:25:36,968  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:39:47,893  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:39:47,912  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:39:47,915  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:39:48,104  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:39:48,544  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:40:07,340  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:40:07,364  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:40:07,368  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:40:07,540  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:40:07,996  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:46:10,927  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:46:10,946  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:46:10,949  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:46:11,142  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:46:11,604  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:46:28,079  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:46:28,099  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:46:28,103  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:46:28,277  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:46:28,750  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:49:22,801  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:49:22,819  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:49:22,823  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:49:23,006  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:49:23,442  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:53:59,744  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:53:59,766  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:53:59,770  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:53:59,944  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:54:00,379  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:57:01,145  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:57:01,165  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:57:01,168  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:57:01,348  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:57:01,830  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-12 23:58:10,760  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-12 23:58:10,781  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-12 23:58:10,785  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-12 23:58:10,960  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-12 23:58:11,431  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 

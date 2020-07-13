@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MockHollywoodBets.Models;
+using MockHollywoodBetsDAL.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Cors;
-using MockHollywoodBets.DataManagers;
-using MockHollywoodBets.DataManagers.Repository.Interfaces;
-using MockHollywoodBets.CustomModels;
+using MockHollywoodBetsDAL.DataManagers;
+using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
+using MockHollywoodBetsDAL.CustomModels;
 
 namespace MockHollywoodBets.Controllers
 {
