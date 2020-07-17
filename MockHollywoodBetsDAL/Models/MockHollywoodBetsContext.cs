@@ -32,6 +32,11 @@ namespace MockHollywoodBetsDAL.Models
         public virtual DbSet<TournamentBettype> TournamentBettype { get; set; }
         public virtual DbSet<TournamentSc> TournamentSc { get; set; }
         public virtual DbSet<MarketOdd> MarketOdd { get; set; }
+        public virtual DbSet<MarketBettypeInfo> MarketBettypeInfo { get; set; }
+        public virtual DbSet<TournamentBettypeInfo> TournamentBettypeInfo { get; set; }
+        public virtual DbSet<SportCountryInfo> SportCountryInfo { get; set; }
+        public virtual DbSet<OddInfo> OddInfo { get; set; }
+        public virtual DbSet<TournamentSCInfo> TournamentSCInfo { get; set; }
 
         //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //        {

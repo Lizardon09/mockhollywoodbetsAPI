@@ -43,7 +43,7 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             }
         }
 
-        public int Delete(BetSlipInfo entity)
+        public int Delete(long? id)
         {
             throw new NotImplementedException();
         }

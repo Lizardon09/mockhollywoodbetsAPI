@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using MockHollywoodBetsDAL.Models;
 using Dapper;
+using System.Data;
+using MockHollywoodBetsDAL.CustomModels;
 
 namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 {
@@ -22,8 +24,9 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.InsertSportTree {entity.Name},{entity.Logo}");
-                return result;
+                var parameters = new { entity.Name, entity.Logo };
+                connection.Execute("dbo.InsertSportTree", parameters, commandType: CommandType.StoredProcedure);
+                return 0;
             }
         }
 
@@ -32,16 +35,43 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             using (var connection = DBService.GetSqlConnection())
             {
                 var result = connection.Execute($"EXECUTE dbo.UpdateSportTree {entity.Id},{entity.Name},{entity.Logo}");
-                return result;
+                return result + 1;
             }
         }
 
-        public int Delete(SportTree entity)
+        public int Delete(long? id)
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.DeleteSportTree {entity.Id}");
-                return result;
+                var result = connection.Execute($"EXECUTE dbo.DeleteSportTree {id}");
+                return result + 1;
+            }
+        }
+
+        public int AddSportCountry(SportCountry entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertSportCountry {entity.SportId},{entity.CountryId}");
+                return result + 1;
+            }
+        }
+
+        public int UpdateSportCountry(SportCountry entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateSportCountry {entity.SportCountryId},{entity.SportId},{entity.CountryId}");
+                return result + 1;
+            }
+        }
+
+        public int DeleteSportCountry(long? id)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteSportCountry {id}");
+                return result + 1;
             }
         }
 
@@ -58,6 +88,16 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
         public IQueryable<SportTree> GetAll()
         {
             return _dbService.dbContext().SportTree.FromSqlInterpolated($"EXECUTE dbo.GetAllSports").AsQueryable();
+        }
+
+        public IQueryable<SportCountryInfo> GetAllSportCountryInfo()
+        {
+            return _dbService.dbContext().SportCountryInfo.FromSqlInterpolated($"EXECUTE dbo.GetAllSportCountryInfo").AsQueryable();
+        }
+
+        public IQueryable<SportCountryInfo> GetSportCountryInfo(long? sportcountryid)
+        {
+            return _dbService.dbContext().SportCountryInfo.FromSqlInterpolated($"EXECUTE dbo.GetSportCountryInfoById {sportcountryid}").AsQueryable();
         }
 
         /*

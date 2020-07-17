@@ -12,6 +12,6 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Interfaces
         TEntity Get(long id);
         int Add(TEntity entity);
         int Update(TEntity entity);
-        int Delete(TEntity entity);
+        int Delete(long? id);
     }
 }

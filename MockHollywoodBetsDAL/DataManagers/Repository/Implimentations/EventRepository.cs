@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using MockHollywoodBetsDAL.Models;
 using Dapper;
+using System.Data;
 
 namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
 {
@@ -23,8 +24,9 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.InsertEvent {entity.Name},{entity.Date},{entity.TournamentId}");
-                return result;
+                var parameters = new { entity.Name, entity.Date, entity.TournamentId };
+                connection.Execute("dbo.InsertEvent", parameters, commandType: CommandType.StoredProcedure);
+                return 0;
             }
         }
 
@@ -32,17 +34,19 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.UpdateEvent {entity.Id},{entity.Name},{entity.Date},{entity.TournamentId}");
-                return result;
+
+                var parameters = new { entity.Id, entity.Name, entity.Date, entity.TournamentId };
+                connection.Execute("dbo.UpdateEvent", parameters, commandType: CommandType.StoredProcedure);
+                return 0;
             }
         }
 
-        public int Delete(Event entity)
+        public int Delete(long? id)
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.DeleteEvent {entity.Id}");
-                return result;
+                var result = connection.Execute($"EXECUTE dbo.DeleteEvent {id}");
+                return result + 1;
             }
         }
 

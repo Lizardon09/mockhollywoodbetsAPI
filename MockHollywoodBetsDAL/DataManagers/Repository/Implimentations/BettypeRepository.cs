@@ -24,7 +24,7 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             using (var connection = DBService.GetSqlConnection())
             {
                 var result = connection.Execute($"EXECUTE dbo.InsertBettype {entity.Name}");
-                return result;
+                return result + 1;
             }
         }
 
@@ -33,16 +33,70 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
             using (var connection = DBService.GetSqlConnection())
             {
                 var result = connection.Execute($"EXECUTE dbo.UpdateBettype {entity.Id},{entity.Name}");
-                return result;
+                return result + 1;
             }
         }
 
-        public int Delete(Bettype entity)
+        public int Delete(long? id)
         {
             using (var connection = DBService.GetSqlConnection())
             {
-                var result = connection.Execute($"EXECUTE dbo.DeleteBettype {entity.Id}");
-                return result;
+                var result = connection.Execute($"EXECUTE dbo.DeleteBettype {id}");
+                return result + 1;
+            }
+        }
+
+        public int AddTournamentBettype(TournamentBettype entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertTournamentBettype {entity.TournamentId},{entity.BettypeId}");
+                return result + 1;
+            }
+        }
+
+        public int AddMarketBettype(MarketBettype entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.InsertMarketBettype {entity.MarketId},{entity.BettypeId}");
+                return result + 1;
+            }
+        }
+
+        public int UpdateMarketBettype(MarketBettype entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateMarketBettype {entity.Id},{entity.MarketId},{entity.BettypeId}");
+                return result + 1;
+            }
+        }
+
+        public int UpdateTournamentBettype(TournamentBettype entity)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.UpdateTournamentBettype {entity.Id},{entity.TournamentId},{entity.BettypeId}");
+                return result + 1;
+            }
+        }
+
+        public int DeleteMarketBettype(long? id)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteMarketBettype {id}");
+                return result + 1;
+            }
+        }
+
+        public int DeleteTournamentBettype(long? id)
+        {
+            using (var connection = DBService.GetSqlConnection())
+            {
+                var result = connection.Execute($"EXECUTE dbo.DeleteTournamentBettype {id}");
+                return result + 1;
             }
         }
 

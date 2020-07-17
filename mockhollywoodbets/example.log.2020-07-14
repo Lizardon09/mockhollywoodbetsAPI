@@ -1,0 +1,318 @@
+2020-07-14 02:04:18,765  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:04:18,776  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:04:18,779  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:04:18,930  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:04:19,365  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:07:33,331  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:07:33,343  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:07:33,345  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:07:33,499  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:07:33,902  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:10:27,648  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:10:27,660  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:10:27,663  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:10:27,820  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:10:28,229  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:23:55,016  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:23:55,028  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:23:55,030  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:23:55,194  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:23:55,601  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:44:12,885  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:44:12,897  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:44:12,899  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:44:13,060  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:44:13,476  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:45:54,556  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:45:54,568  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:45:54,571  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:45:54,732  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:45:55,154  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:46:19,201  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:46:19,213  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:46:19,215  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:46:19,361  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:46:19,759  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 02:48:09,378  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 02:48:09,389  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 02:48:09,392  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 02:48:09,537  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 02:48:09,945  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:00:25,828  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:00:25,839  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:00:25,841  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:00:25,999  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:00:26,398  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:01:21,852  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:01:21,863  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:01:21,865  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:01:22,018  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:01:22,433  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:10:02,812  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:10:02,823  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:10:02,826  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:10:02,985  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:10:03,437  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:11:49,263  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:11:49,274  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:11:49,276  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:11:49,426  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:11:49,823  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:25:28,526  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:25:28,538  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:25:28,541  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:25:28,692  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:25:29,089  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:34:08,339  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:34:08,351  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:34:08,353  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:34:08,507  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:34:08,924  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:35:43,616  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:35:43,628  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:35:43,631  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:35:43,778  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:35:44,185  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 03:39:23,682  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 03:39:23,693  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 03:39:23,696  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 03:39:23,851  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 03:39:24,263  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:20:30,795  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:20:30,808  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:20:30,811  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:20:30,966  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:20:31,383  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:37:27,186  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:37:27,197  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:37:27,201  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:37:27,368  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:37:27,782  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:40:33,731  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:40:33,743  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:40:33,746  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:40:33,897  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:40:34,296  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:43:13,127  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:43:13,139  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:43:13,142  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:43:13,299  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:43:13,716  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:43:23,933  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:43:23,944  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:43:23,946  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:43:24,099  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:43:24,559  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:45:20,155  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:45:20,166  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:45:20,168  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:45:20,330  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:45:20,732  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:47:20,964  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:47:20,975  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:47:20,978  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:47:21,135  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:47:21,544  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:51:29,850  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:51:29,862  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:51:29,865  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:51:30,020  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:51:30,455  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 07:57:58,761  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 07:57:58,773  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 07:57:58,776  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 07:57:58,924  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 07:57:59,338  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 09:01:54,521  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 09:01:54,533  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 09:01:54,536  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 09:01:54,696  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 09:01:55,104  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 12:54:12,227  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 12:54:19,552  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 12:54:31,803  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 12:54:33,061  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 12:54:37,975  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 12:54:37,980  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 12:54:38,274  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-14 21:23:04,798  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 21:23:04,810  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 21:23:04,813  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 21:23:05,052  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:23:05,462  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 21:24:21,873  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:24:41,898  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:26:29,409  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 21:26:30,221  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 21:26:31,240  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 21:26:31,241  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 21:26:31,535  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-14 21:26:41,431  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 21:27:08,536  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:27:10,566  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 21:27:11,431  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 21:27:12,448  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 21:27:12,455  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 21:27:12,747  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-14 21:27:57,809  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 21:27:59,369  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 21:28:00,634  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 21:28:00,638  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 21:28:00,933  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-14 21:29:31,120  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:29:33,049  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 21:29:34,320  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 21:39:52,838  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 21:39:52,849  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 21:39:52,851  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 21:39:53,000  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:39:53,404  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 21:53:51,072  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 21:53:51,084  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 21:53:51,087  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 21:53:51,245  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 21:53:51,644  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:29:07,040  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:29:07,052  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:29:07,055  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:29:07,202  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:29:07,646  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:35:42,852  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:35:42,863  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:35:42,865  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:35:43,015  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:35:43,484  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:37:47,633  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:37:47,644  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:37:47,646  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:37:47,795  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:37:48,193  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:39:28,865  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:39:28,876  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:39:28,879  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:39:29,026  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:39:29,428  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:41:22,280  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:41:22,292  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:41:22,294  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:41:22,443  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:41:22,838  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:44:59,749  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 22:44:59,760  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 22:44:59,762  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 22:44:59,910  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:45:00,308  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 22:45:38,287  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:45:38,299  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 22:45:48,738  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 22:45:48,744  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 22:45:55,861  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 25
+ 2020-07-14 22:45:55,867  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 25 ) no entries found
+ 2020-07-14 22:49:50,582  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 22:49:52,817  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 25
+ 2020-07-14 22:49:52,821  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 25 ) no entries found
+ 2020-07-14 22:49:56,734  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:01:30,873  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 23:01:30,886  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 23:01:30,889  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 23:01:31,043  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:01:31,437  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 23:07:03,665  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 23:07:03,676  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 23:07:03,679  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 23:07:03,827  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:07:04,231  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 23:07:21,297  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 23:07:21,310  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 23:07:21,312  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 23:07:21,476  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:07:21,878  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 23:09:02,316  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 23:09:02,327  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 23:09:02,330  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 23:09:02,484  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:09:02,896  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 23:09:28,316  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:09:30,440  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 25
+ 2020-07-14 23:09:31,875  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 25 and CountryId: 1
+ 2020-07-14 23:09:31,885  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 25 and CountryId: 1 ) no entries found
+ 2020-07-14 23:09:55,793  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 10
+ 2020-07-14 23:09:55,798  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 10 ) no entries found
+ 2020-07-14 23:09:57,714  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 25
+ 2020-07-14 23:09:59,142  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 25 and CountryId: 9
+ 2020-07-14 23:09:59,147  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 25 and CountryId: 9 ) no entries found
+ 2020-07-14 23:10:05,732  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:10:48,968  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:11:21,821  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:11:54,087  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:11:58,499  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 26
+ 2020-07-14 23:11:58,506  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 26 ) no entries found
+ 2020-07-14 23:12:08,050  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:12:32,740  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 26
+ 2020-07-14 23:12:34,800  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 26 and CountryId: 1
+ 2020-07-14 23:12:34,805  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 26 and CountryId: 1 ) no entries found
+ 2020-07-14 23:12:37,063  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 26 and CountryId: 1
+ 2020-07-14 23:12:37,067  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 26 and CountryId: 1 ) no entries found
+ 2020-07-14 23:13:00,117  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:13:00,132  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 26
+ 2020-07-14 23:13:10,366  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:13:38,284  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:33:33,231  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:33:36,454  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 27
+ 2020-07-14 23:33:36,459  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 27 ) no entries found
+ 2020-07-14 23:33:40,508  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 14
+ 2020-07-14 23:33:40,512  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 14 ) no entries found
+ 2020-07-14 23:33:42,132  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:33:46,050  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 27
+ 2020-07-14 23:33:46,054  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 27 ) no entries found
+ 2020-07-14 23:34:09,793  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:34:09,813  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 27
+ 2020-07-14 23:34:12,360  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 27 and CountryId: 1
+ 2020-07-14 23:34:12,366  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 27 and CountryId: 1 ) no entries found
+ 2020-07-14 23:34:31,216  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:34:31,233  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 27
+ 2020-07-14 23:34:32,936  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 27 and CountryId: 8
+ 2020-07-14 23:34:32,942  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 27 and CountryId: 8 ) no entries found
+ 2020-07-14 23:34:33,924  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 27 and CountryId: 1
+ 2020-07-14 23:34:33,927  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 27 and CountryId: 1 ) no entries found
+ 2020-07-14 23:34:57,829  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:41:05,191  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-14 23:41:05,202  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-14 23:41:05,204  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\mockhollywoodbets
+ 2020-07-14 23:41:05,358  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:41:05,765  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-14 23:48:07,693  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 21
+ 2020-07-14 23:48:07,757  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 21 ) no entries found
+ 2020-07-14 23:48:11,008  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 20
+ 2020-07-14 23:48:11,020  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 20 ) no entries found
+ 2020-07-14 23:48:12,009  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 21
+ 2020-07-14 23:48:12,013  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 21 ) no entries found
+ 2020-07-14 23:48:53,711  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 20
+ 2020-07-14 23:48:53,718  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 20 ) no entries found
+ 2020-07-14 23:48:54,961  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 21
+ 2020-07-14 23:49:02,687  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 21 and CountryId: 18
+ 2020-07-14 23:49:02,697  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 21 and CountryId: 18 ) no entries found
+ 2020-07-14 23:49:04,062  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 21 and CountryId: 18
+ 2020-07-14 23:49:04,067  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 21 and CountryId: 18 ) no entries found
+ 2020-07-14 23:49:12,325  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 20
+ 2020-07-14 23:49:12,330  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 20 ) no entries found
+ 2020-07-14 23:49:13,096  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 21
+ 2020-07-14 23:49:24,587  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 20
+ 2020-07-14 23:49:26,002  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 20 and CountryId: 18
+ 2020-07-14 23:49:26,007  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request (GET all Tournaments by SportId: 20 and CountryId: 18 ) no entries found
+ 2020-07-14 23:49:45,972  INFO MockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-14 23:49:48,702  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 21
+ 2020-07-14 23:49:48,708  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 21 ) no entries found
+ 2020-07-14 23:49:50,069  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 20
+ 2020-07-14 23:49:50,073  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request (GET all Countries by SportId: 20 ) no entries found
+ 2020-07-14 23:54:29,982  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:54:30,516  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 23:54:31,361  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 23:54:31,362  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 23:54:31,661  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 2020-07-14 23:55:00,503  INFO MockHollywoodBets.Controllers.SportCountryController.? [?] - MESSAGE: API Request hit: GET all Countries by SportId: 5
+ 2020-07-14 23:55:01,325  INFO MockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by SportId: 5 and CountryId: 1
+ 2020-07-14 23:55:02,282  INFO MockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by TournamentId: 1
+ 2020-07-14 23:55:02,290  INFO MockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Bettypes by TournamentId: 1
+ 2020-07-14 23:55:02,579  INFO MockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketOdds by TournamentId: 1
+ 

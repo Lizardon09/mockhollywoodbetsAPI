@@ -11,6 +11,22 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Interfaces
     {
         IQueryable<MarketOdd> Get(long? tournamentid);
         IQueryable<MarketOdd> GetAll();
-        IQueryable<MarketOdd> GetMarket(long? marketid);
+
+        IQueryable<Market> GetMarket(long? marketid);
+        IQueryable<Market> GetMarkets();
+
+        int AddMarketBettype(MarketBettype entity);
+        int UpdateMarketBettype(MarketBettype entity);
+        int DeleteMarketBettype(long? id);
+
+        IQueryable<MarketBettypeInfo> GetAllMarketBettypeInfo();
+        IQueryable<MarketBettypeInfo> GetMarketBettypeInfo(long? marketbettypeid);
+
+        int AddOdd(Odds entity);
+        int UpdateOdd(Odds entity);
+        int DeleteOdd(long? id);
+
+        IQueryable<OddInfo> GetAllOddInfo();
+        IQueryable<OddInfo> GetOddInfo(long? oddid);
     }
 }

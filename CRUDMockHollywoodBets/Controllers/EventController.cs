@@ -60,7 +60,7 @@ namespace CRUDMockHollywoodBets.Controllers
             catch (Exception e)
             {
                 _logger.LogError("API Request (INSERT Event) FAILED: ", e);
-                return BadRequest("Failed");
+                return BadRequest(e);
             }
         }
 
@@ -101,15 +101,15 @@ namespace CRUDMockHollywoodBets.Controllers
         }
 
         [HttpDelete]
-        public IActionResult Delete([FromBody] Event entity)
+        public IActionResult Delete(long? id)
         {
             try
             {
-                if (entity != null)
+                if (id.HasValue)
                 {
 
-                    _logger.LogInformation("API Request hit: DELETE Event : " + entity.Name);
-                    var result = _eventRepository.Delete(entity);
+                    _logger.LogInformation("API Request hit: DELETE Event : " + id.Value);
+                    var result = _eventRepository.Delete(id.Value);
 
                     if (result == 0)
                     {
@@ -117,7 +117,7 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (DELETE Event : " + entity.Name + " ) not committed");
+                        _logger.LogInformation("API Request (DELETE Event : " + id.Value + " ) not committed");
                         return NotFound("Failed: DELETE could not commit");
                     }
 

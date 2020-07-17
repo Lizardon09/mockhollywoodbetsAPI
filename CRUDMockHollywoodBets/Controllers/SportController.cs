@@ -13,7 +13,7 @@ using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
 
 namespace CRUDMockHollywoodBets.Controllers
 {
-    [Route("api/CRUD/[controller]")]
+    [Route("api/CRUD/sport")]
     [ApiController]
     [EnableCors("CorsPolicy")]
     public class SportController : ControllerBase
@@ -64,6 +64,43 @@ namespace CRUDMockHollywoodBets.Controllers
             }
         }
 
+        [HttpPost]
+        [Route("PostSportCountry")]
+        public IActionResult PostSportCountry([FromBody] SportCountry sportCountry)
+        {
+            try
+            {
+                if (sportCountry != null)
+                {
+
+                    _logger.LogInformation("API Request hit: INSERT SportCountry : ");
+                    var result = _sportTreeRepository.AddSportCountry(sportCountry);
+
+                    if (result == 0)
+                    {
+                        return Ok("{\"status\": \"Success\"}");
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (INSERT SportCountry : ) not committed");
+                        return NotFound("Failed: INSERT could not commit");
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit (INSERT SportCountry) with null entry");
+                    return BadRequest("Failed: null entry");
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (INSERT SportCountry) FAILED: ", e);
+                return BadRequest("Failed");
+            }
+        }
+
         [HttpPut]
         public IActionResult Put([FromBody] SportTree sportTree)
         {
@@ -100,16 +137,17 @@ namespace CRUDMockHollywoodBets.Controllers
             }
         }
 
-        [HttpDelete]
-        public IActionResult Delete([FromBody] SportTree sportTree)
+        [HttpPut]
+        [Route("UpdateSportCountry")]
+        public IActionResult UpdateSportCountry([FromBody] SportCountry sportCountry)
         {
             try
             {
-                if (sportTree != null)
+                if (sportCountry != null)
                 {
 
-                    _logger.LogInformation("API Request hit: DELETE Sport : " + sportTree.Name);
-                    var result = _sportTreeRepository.Delete(sportTree);
+                    _logger.LogInformation("API Request hit: UPDATE SportCountry : " + sportCountry.SportCountryId);
+                    var result = _sportTreeRepository.UpdateSportCountry(sportCountry);
 
                     if (result == 0)
                     {
@@ -117,7 +155,43 @@ namespace CRUDMockHollywoodBets.Controllers
                     }
                     else
                     {
-                        _logger.LogInformation("API Request (DELETE Sport : " + sportTree.Name + " ) not committed");
+                        _logger.LogInformation("API Request (UPDATE SportCountry : " + sportCountry.SportCountryId + " ) not committed");
+                        return NotFound("Failed: UPDATE could not commit");
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit (UPDATE SportCountry) with null entry");
+                    return BadRequest("Failed: null entry");
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (UPDATE SportCountry) FAILED: ", e);
+                return BadRequest("Failed");
+            }
+        }
+
+        [HttpDelete]
+        public IActionResult Delete(long? id)
+        {
+            try
+            {
+                if (id.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: DELETE Sport : " + id.Value);
+                    var result = _sportTreeRepository.Delete(id.Value);
+
+                    if (result == 0)
+                    {
+                        return Ok("{\"status\": \"Success\"}");
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (DELETE Sport : " + id.Value + " ) not committed");
                         return NotFound("Failed: DELETE could not commit");
                     }
 
@@ -132,6 +206,43 @@ namespace CRUDMockHollywoodBets.Controllers
             catch (Exception e)
             {
                 _logger.LogError("API Request (DELETE Sport) FAILED: ", e);
+                return BadRequest("Failed");
+            }
+        }
+
+        [HttpDelete]
+        [Route("DeleteSportCountry")]
+        public IActionResult DeleteSportCountry(long? id)
+        {
+            try
+            {
+                if (id.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: DELETE SportCountry : " + id.Value);
+                    var result = _sportTreeRepository.DeleteSportCountry(id.Value);
+
+                    if (result == 0)
+                    {
+                        return Ok("{\"status\": \"Success\"}");
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (DELETE SportCountry : " + id.Value + " ) not committed");
+                        return NotFound("Failed: DELETE could not commit");
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit (DELETE SportCountry) with null entry");
+                    return BadRequest("Failed: null entry");
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (DELETE SportCountry) FAILED: ", e);
                 return BadRequest("Failed");
             }
         }
@@ -169,6 +280,44 @@ namespace CRUDMockHollywoodBets.Controllers
             {
                 _logger.LogError("API Request (GET all Sports by Id) FAILED: ", e);
                 return BadRequest();
+            }
+
+        }
+
+        [HttpGet]
+        [Route("GetAllSportCountryInfo")]
+        public IActionResult GetAllSportCountryInfo(long? sportcountryid)
+        {
+            try
+            {
+                if (sportcountryid.HasValue)
+                {
+
+                    _logger.LogInformation("API Request hit: GET all SportCountryInfo by Id: " + sportcountryid.Value);
+                    var result = _sportTreeRepository.GetSportCountryInfo(sportcountryid.Value);
+                    if (result.ToList().Any())
+                    {
+                        return Ok(result);
+                    }
+                    else
+                    {
+                        _logger.LogInformation("API Request (GET all Markets by SportCountryInfo: " + sportcountryid.Value + " ) no entries found");
+                        return NotFound("TournamentBettypeInfo was not found with Id: " + sportcountryid.Value);
+                    }
+
+                }
+                else
+                {
+                    _logger.LogInformation("API Request hit: GET all SportCountryInfo by no criteria");
+                    var result = _sportTreeRepository.GetAllSportCountryInfo();
+                    return Ok(result);
+                }
+            }
+
+            catch (Exception e)
+            {
+                _logger.LogError("API Request (GET all SportCountryInfo by Id) FAILED: ", e);
+                return BadRequest("Failed");
             }
 
         }
