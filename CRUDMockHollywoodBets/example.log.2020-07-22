@@ -1,0 +1,132 @@
+2020-07-22 13:29:59,938  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-22 13:29:59,953  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-22 13:29:59,956  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-22 13:30:00,287  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 13:30:00,781  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 13:30:00,785  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'OddInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 13:30:48,021  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:30:48,022  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:31:06,425  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:31:06,426  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:31:31,802  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: INSERT Event : TestDateException
+ 2020-07-22 13:31:32,145 ERROR CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request (INSERT Event) FAILED: 
+ 2020-07-22 13:31:32,598  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:31:32,603  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:34:11,254  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:34:11,255  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:34:31,809  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: INSERT Event : TestDate
+ 2020-07-22 13:34:31,834 ERROR CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request (INSERT Event) FAILED: 
+ 2020-07-22 13:35:32,451  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:35:32,460  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:36:41,595  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: INSERT Event : Test23
+ 2020-07-22 13:36:41,621 ERROR CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request (INSERT Event) FAILED: 
+ 2020-07-22 13:36:41,941  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:36:41,948  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:38:17,109  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-22 13:38:17,129  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-22 13:38:17,133  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-22 13:38:17,301  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 13:38:17,698  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 13:38:17,701  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'OddInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 13:38:25,760  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 13:38:25,761  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 13:38:47,597  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: INSERT Event : Test17
+ 2020-07-22 13:59:55,562  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-22 13:59:55,586  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-22 13:59:55,590  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-22 13:59:55,767  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 13:59:56,187  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 13:59:56,198  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'OddInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-22 14:00:42,724  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 14:00:42,725  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:00:54,175  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:00:54,182  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 14:01:17,427  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: INSERT Event : Test23
+ 2020-07-22 14:01:17,944  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 14:01:17,945  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:01:25,231  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:01:29,660  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: DELETE Event : 20
+ 2020-07-22 14:01:29,992  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:04:55,736  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:04:56,965  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:05:00,637  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:05:02,447  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:05:05,574  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:05:07,688  INFO CRUDMockHollywoodBets.Controllers.EventController.? [?] - MESSAGE: API Request hit: GET all Events by no criteria
+ 2020-07-22 14:05:12,102  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 14:05:12,123  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:05:12,123  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:05:12,125  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all Markets by no criteria
+ 2020-07-22 14:05:12,127  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:05:42,851  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:05:42,857  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:05:42,858  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:05:50,809  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:05:50,813  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:05:50,818  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:06:31,734  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:06:31,740  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:06:31,745  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:06:38,605  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:06:38,608  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:06:38,615  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:06:50,672  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:06:50,682  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:06:50,684  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:06:57,223  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:06:57,227  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:06:57,230  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:07:06,831  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:07:06,845  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:07:06,849  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:07:34,393  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:07:34,399  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:07:34,407  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:07:42,848  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:07:42,851  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:07:42,853  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:07:51,571  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:07:51,579  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:07:51,585  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:08:08,991  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:08:08,999  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:08:09,001  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:08:18,095  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:08:18,102  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:08:18,103  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:08:25,832  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:08:25,844  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:08:25,849  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:08:45,300  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:08:45,302  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:08:45,307  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:08:53,006  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:08:53,011  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:08:53,014  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:09:06,683  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:09:06,694  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:09:06,697  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:09:16,558  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:09:16,565  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:09:16,567  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:09:27,651  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:09:27,659  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:09:27,661  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:09:35,667  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:09:35,675  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:09:35,678  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:11:02,752  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:11:02,758  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-22 14:11:02,773  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-22 14:11:02,778  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-22 14:11:02,783  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all Markets by no criteria
+ 2020-07-22 14:11:12,256  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:11:12,264  INFO CRUDMockHollywoodBets.Controllers.CountryController.? [?] - MESSAGE: API Request hit: GET all Countries by no criteria
+ 2020-07-22 14:11:12,267  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all SportCountryInfo by no criteria
+ 2020-07-22 14:11:20,317  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:11:20,320  INFO CRUDMockHollywoodBets.Controllers.CountryController.? [?] - MESSAGE: API Request hit: GET all Countries by no criteria
+ 2020-07-22 14:11:20,330  INFO CRUDMockHollywoodBets.Controllers.CountryController.? [?] - MESSAGE: API Request hit: GET all SportCountryInfo by no criteria
+ 2020-07-22 14:11:31,333  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-22 14:11:31,337  INFO CRUDMockHollywoodBets.Controllers.CountryController.? [?] - MESSAGE: API Request hit: GET all Countries by no criteria
+ 2020-07-22 14:11:31,341  INFO CRUDMockHollywoodBets.Controllers.CountryController.? [?] - MESSAGE: API Request hit: GET all SportCountryInfo by no criteria
+ 

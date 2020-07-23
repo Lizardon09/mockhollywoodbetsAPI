@@ -1,0 +1,12 @@
+2020-07-17 10:21:34,040  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Application started. Press Ctrl+C to shut down.
+ 2020-07-17 10:21:34,075  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Hosting environment: Development
+ 2020-07-17 10:21:34,077  INFO Microsoft.Hosting.Lifetime.? [?] - MESSAGE: Content root path: C:\Users\varun\Desktop\mockhollywoodbetsAPI\CRUDMockHollywoodBets
+ 2020-07-17 10:21:34,404  INFO CRUDMockHollywoodBets.Controllers.SportController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-17 10:21:34,958  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'MarketOdd'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-17 10:21:34,961  WARN Microsoft.EntityFrameworkCore.Model.Validation.? [?] - MESSAGE: No type was specified for the decimal column 'Odds' on entity type 'OddInfo'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values using 'HasColumnType()'.
+ 2020-07-17 11:18:38,209  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all TournamentBettypeInfo by no criteria
+ 2020-07-17 11:18:38,210  INFO CRUDMockHollywoodBets.Controllers.BettypeController.? [?] - MESSAGE: API Request hit: GET all Sports by no criteria
+ 2020-07-17 11:18:38,211  INFO CRUDMockHollywoodBets.Controllers.TournamentController.? [?] - MESSAGE: API Request hit: GET all Tournaments by no criteria
+ 2020-07-17 11:18:38,213  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all MarketBettypeInfo by no criteria
+ 2020-07-17 11:18:38,215  INFO CRUDMockHollywoodBets.Controllers.MarketController.? [?] - MESSAGE: API Request hit: GET all Markets by no criteria
+ 

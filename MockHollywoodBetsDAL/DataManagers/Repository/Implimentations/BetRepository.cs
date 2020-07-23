@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.EntityFrameworkCore;
 using MockHollywoodBetsDAL.CustomModels;
 using MockHollywoodBetsDAL.DataManagers.Repository.Interfaces;
 using MockHollywoodBetsDAL.Models;
@@ -56,6 +57,26 @@ namespace MockHollywoodBetsDAL.DataManagers.Repository.Implimentations
         public IQueryable<BetSlipInfo> GetAll()
         {
             throw new NotImplementedException();
+        }
+
+        public IQueryable<BetInfo> GetAllBets()
+        {
+            return _dbService.dbContext().BetInfo.FromSqlInterpolated($"EXECUTE dbo.GetAllBets").AsQueryable();
+        }
+
+        public IQueryable<BetSlip> GetAllBetSlip()
+        {
+            return _dbService.dbContext().BetSlip.FromSqlInterpolated($"EXECUTE dbo.GetAllBetSlips").AsQueryable();
+        }
+
+        public IQueryable<BetInfo> GetBetInfo(long? betslipid)
+        {
+            return _dbService.dbContext().BetInfo.FromSqlInterpolated($"EXECUTE dbo.GetAllBetByBetslip {betslipid}").AsQueryable();
+        }
+
+        public IQueryable<BetSlip> GetBetSlip(long? betslipid)
+        {
+            return _dbService.dbContext().BetSlip.FromSqlInterpolated($"EXECUTE dbo.GetBetSlipByBetSlipId {betslipid}").AsQueryable();
         }
 
         public int Update(BetSlipInfo entity)
