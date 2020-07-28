@@ -1,6 +1,10 @@
 # mockhollywoodbetsAPI
 
-The MockHollywoodBets API is developed using .NET Core with datasbase interaction using Dapper. The Solution is devided into 3 projects:
+The MockHollywoodBets API is developed using .NET Core with datasbase interaction using Dapper. The mockhollywoodbets and CRUDmockhollywoodbets sites are built using Angular.
+
+![ERD](https://user-images.githubusercontent.com/57814467/88640746-975c6580-d0be-11ea-8bc0-561fe13e0006.png)
+
+The API solution is divided into 3 projects:
 
 ## mockhollywoodbets
 
@@ -10,9 +14,9 @@ Contains controllers utilized by the mockhollywoodbets site to display databse i
 
 ## CRUDMockHollywoodBets
 
-Contains controllers utilized by the CRUDmockhollywoodbets site to enable Creation, Update, and Delete functionality for the database.
+Contains controllers utilized by the CRUDmockhollywoodbets site to enable Creation, Update, and Delete functionality for database entries.
+
+
 
 MockHollywoodBetsDAL
 
-
-![ERD](https://user-images.githubusercontent.com/57814467/88640746-975c6580-d0be-11ea-8bc0-561fe13e0006.png)
