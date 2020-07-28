@@ -6,7 +6,7 @@ The MockHollywoodBets API is developed using .NET Core with datasbase interactio
 
 Contains controllers utilized by the mockhollywoodbets site to display databse information (including Sports, Countries, Tournaments, etc) and also provide bet striking capabilities for the site.
 
-
+![mockhollywoodbets](https://user-images.githubusercontent.com/57814467/88643573-27e87500-d0c2-11ea-976e-ef7ab1f0b23d.PNG)
 
 ## CRUDMockHollywoodBets
 
