@@ -14,9 +14,11 @@ Contains controllers utilized by the mockhollywoodbets site to display databse i
 
 ## CRUDMockHollywoodBets
 
-Contains controllers utilized by the CRUDmockhollywoodbets site to enable Creation, Update, and Delete functionality for database entries.
+Contains controllers utilized by the CRUDmockhollywoodbets site to enable Creation, Update, and Delete functionality for database entries retrieved by the mockhollywoodbets site through the API.
+
+![CRUDmockhollywoodbets](https://user-images.githubusercontent.com/57814467/88645888-eb6a4880-d0c4-11ea-9fae-175741297202.PNG)
+
+## MockHollywoodBetsDAL
 
 
-
-MockHollywoodBetsDAL
 
