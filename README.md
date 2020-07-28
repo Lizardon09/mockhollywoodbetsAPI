@@ -27,3 +27,5 @@ Models - Contains the classes and dbcontext for the data within the databse
 CustomModels - contains viewmodels for combined/custom data from the databse
 
 DataMangers - contains interfaces of repositories with their implimentations that provide the functional interactions with the databse for the API.
+
+![MockHollywoodBets](https://user-images.githubusercontent.com/57814467/88657064-97b22c00-d0d1-11ea-835f-c27038c29503.png)
